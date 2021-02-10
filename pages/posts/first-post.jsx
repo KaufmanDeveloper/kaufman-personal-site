@@ -12,12 +12,6 @@ export default function FirstPost() {
         </Head>
 
         <h1>First Post</h1>
-
-        <h2>
-          <Link href="/">
-            <a className="text-blue-800">Back to home</a>
-          </Link>
-        </h2>
       </Layout>
     </>
   );
