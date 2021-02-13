@@ -7,7 +7,7 @@ export const siteTitle = "Michael Kaufman Blog";
 
 export default function Layout({ children, home }) {
   return (
-    <div>
+    <div className="m-2">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
