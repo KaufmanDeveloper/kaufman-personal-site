@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import Date from "../components/date";
 
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
@@ -234,12 +235,15 @@ export default function Home({ allPostsData }) {
         <h2 className="font-bold text-lg">Blog</h2>
         <ul>
           {allPostsData.map(({ id, date, title }) => (
-            <li className="mb-2" key={id}>
-              {title}
-              <br />
-              {id}
-              <br />
-              {date}
+            <li className="my-4" key={id}>
+              <div className="text-lg text-blue-700 hover:text-blue-500">
+                <Link href={`/posts/${id}`}>
+                  <a>{title}</a>
+                </Link>
+              </div>
+              <div className="text-sm text-gray-700">
+                <Date dateString={date} />
+              </div>
             </li>
           ))}
         </ul>
