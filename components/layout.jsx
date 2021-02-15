@@ -1,6 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
+
+import Header from "./header";
 
 const name = "Michael Kaufman";
 export const siteTitle = "Michael Kaufman Blog";
@@ -11,8 +12,8 @@ export default function Layout({ children, home }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
+          name="Michael Kaufman's personal blog"
+          content="Read posts and learnings by Michael Kaufman"
         />
         <meta
           property="og:image"
@@ -23,40 +24,11 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header>
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  height={108}
-                  width={108}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2>
-              <Link href="/">
-                <a>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
-      </header>
+
+      <Header />
+
       <main>{children}</main>
+
       {!home && (
         <div>
           <Link href="/">

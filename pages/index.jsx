@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Date from "../components/date";
 
+import Header from "../components/header";
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
 
@@ -24,12 +25,7 @@ export default function Home({ allPostsData }) {
       </Head>
 
       <main>
-        <Image
-          src="/images/profile.jpg"
-          height={144}
-          width={144}
-          alt="Your Name"
-        />
+        <Header />
 
         <h1 className="title">
           Read{" "}
