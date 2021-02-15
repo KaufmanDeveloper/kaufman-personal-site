@@ -2,6 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
+import MenuIcon from "@material-ui/icons/Menu";
+
 export default function Header() {
   return (
     <header>
@@ -19,6 +21,8 @@ export default function Header() {
             <span className="text-gray-800 text-xl font-semibold">Kaufman</span>
           </div>
         </div>
+
+        <MenuIcon style={{ color: 374151, fontSize: 44 }} />
       </div>
     </header>
   );
