@@ -17,12 +17,12 @@ export default function Header() {
             alt="Michael Kaufman"
           />
           <div className="flex flex-col ml-2">
-            <span className="text-gray-700 text-lg">Michael</span>
-            <span className="text-gray-800 text-xl font-semibold">Kaufman</span>
+            <span className="text-secondary text-lg">Michael</span>
+            <span className="text-primary text-xl font-semibold">Kaufman</span>
           </div>
         </div>
 
-        <MenuIcon style={{ color: 374151, fontSize: 44 }} />
+        <MenuIcon className="text-primary" style={{ fontSize: 44 }} />
       </div>
     </header>
   );

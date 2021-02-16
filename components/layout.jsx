@@ -4,7 +4,7 @@ import Link from "next/link";
 import Header from "./header";
 
 const name = "Michael Kaufman";
-export const siteTitle = "Michael Kaufman Blog";
+export const siteTitle = "Michael Kaufman's Blog";
 
 export default function Layout({ children, home }) {
   return (
@@ -27,7 +27,7 @@ export default function Layout({ children, home }) {
 
       <Header />
 
-      <main>{children}</main>
+      <main className="mx-5">{children}</main>
 
       {!home && (
         <div>
