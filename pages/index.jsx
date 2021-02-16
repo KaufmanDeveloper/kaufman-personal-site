@@ -4,6 +4,7 @@ import Image from "next/image";
 import Date from "../components/date";
 
 import Header from "../components/header";
+import Footer from "../components/Footer";
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
 
@@ -24,7 +25,7 @@ export default function Home({ allPostsData }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="mt-12">
+      <section className="mt-12 max-w-xl">
         <h2 className="text-4xl text-primary">Nice to meet you!</h2>
 
         <div className="mt-8 text-secondary">
@@ -33,12 +34,12 @@ export default function Home({ allPostsData }) {
         </div>
       </section>
 
-      <section className="mt-12">
+      <section className="mt-12 max-w-xl">
         <h2 className="text-4xl text-primary">Journal</h2>
         <ul>
           {allPostsData.map(({ id, date, title }) => (
             <li className="my-4" key={id}>
-              <div className="text-blue-700 hover:text-blue-500">
+              <div className="text-blue-500 hover:text-blue-400">
                 <Link href={`/posts/${id}`}>
                   <a>{title}</a>
                 </Link>
@@ -50,6 +51,8 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
+
+      <Footer />
     </Layout>
   );
 }
