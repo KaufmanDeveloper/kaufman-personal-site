@@ -35,7 +35,8 @@ export default function Home({ allPostsData }) {
 
       <section className="mt-12 max-w-xl">
         <h2 className="text-4xl text-primary">Journal</h2>
-        <ul>
+
+        <ul className="mt-8">
           {allPostsData.map(({ id, date, title }) => (
             <li className="my-4" key={id}>
               <div className="text-blue-500 hover:text-blue-400">
