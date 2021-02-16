@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
-import Header from "./header";
+import Header from "./Header";
 
 const name = "Michael Kaufman";
 export const siteTitle = "Michael Kaufman's Blog";

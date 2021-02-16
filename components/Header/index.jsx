@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import { useState } from "react";
 
 import MenuIcon from "@material-ui/icons/Menu";
-import Modal from "react-awesome-modal";
+
+import HeaderModal from "./HeaderModal";
 
 export default function Header() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -16,13 +16,7 @@ export default function Header() {
 
   return (
     <>
-      <Modal
-        visible={modalIsOpen}
-        width="100%"
-        height="50%"
-        effect="fadeInUp"
-        onClickAway={toggleModal}
-      />
+      <HeaderModal modalIsOpen={modalIsOpen} toggleModal={toggleModal} />
 
       <header>
         <div className="mx-3 my-4 flex items-center justify-between">

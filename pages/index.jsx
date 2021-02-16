@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Date from "../components/date";
 
-import Header from "../components/header";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
