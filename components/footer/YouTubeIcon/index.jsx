@@ -1,7 +1,7 @@
 export default function YouTubeIcon({ className }) {
   return (
     <svg
-      class={`fill-current ${className}`}
+      className={`fill-current ${className}`}
       width="24"
       height="18"
       viewBox="0 0 24 18"

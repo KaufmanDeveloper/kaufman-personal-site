@@ -1,7 +1,7 @@
 export default function TwitterIcon({ className }) {
   return (
     <svg
-      class={`fill-current ${className}`}
+      className={`fill-current ${className}`}
       width="24"
       height="20"
       viewBox="0 0 24 20"
