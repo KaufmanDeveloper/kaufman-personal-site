@@ -1,10 +1,12 @@
 import Link from "next/link";
 import Date from "../date";
 
+import { Section, SectionHeader } from "../Content";
+
 export default function Journal({ allPostsData }) {
   return (
-    <section className="mt-12 max-w-xl">
-      <h2 className="text-4xl text-primary">Journal</h2>
+    <Section className="mt-12 max-w-xl">
+      <SectionHeader className="text-4xl text-primary">Journal</SectionHeader>
 
       <ul className="mt-8">
         {allPostsData.map(({ id, date, title }) => (
@@ -20,6 +22,6 @@ export default function Journal({ allPostsData }) {
           </li>
         ))}
       </ul>
-    </section>
+    </Section>
   );
 }
