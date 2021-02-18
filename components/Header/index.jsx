@@ -6,7 +6,9 @@ import MenuIcon from "@material-ui/icons/Menu";
 
 import { screenSizes } from "../../helpers/constants";
 import useMediaQuery from "../../helpers/useMediaQuery";
+
 import HeaderModal from "./HeaderModal";
+import HeaderNavigation from "./HeaderNavigation";
 
 export default function Header() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -45,7 +47,9 @@ export default function Header() {
             <button onClick={toggleModal}>
               <MenuIcon className="text-primary" style={{ fontSize: 44 }} />
             </button>
-          ) : null}
+          ) : (
+            <HeaderNavigation />
+          )}
         </div>
       </header>
     </>
