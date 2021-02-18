@@ -20,7 +20,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <title>Create Next App</title>
+        <title>Michael Kaufman's Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
