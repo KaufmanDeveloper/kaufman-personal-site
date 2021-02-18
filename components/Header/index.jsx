@@ -31,21 +31,19 @@ export default function Header() {
             <Image
               className="rounded-full"
               src="/images/profile.jpg"
-              height={60}
-              width={60}
+              height={44}
+              width={44}
               alt="Michael Kaufman"
             />
             <div className="flex flex-col ml-2">
-              <span className="text-secondary text-lg">Michael</span>
-              <span className="text-primary text-xl font-semibold">
-                Kaufman
-              </span>
+              <span className="text-secondary text-sm">Michael</span>
+              <span className="text-primary font-semibold">Kaufman</span>
             </div>
           </div>
 
           {isMobileView ? (
             <button onClick={toggleModal}>
-              <MenuIcon className="text-primary" style={{ fontSize: 44 }} />
+              <MenuIcon className="text-primary" style={{ fontSize: 28 }} />
             </button>
           ) : (
             <HeaderNavigation />

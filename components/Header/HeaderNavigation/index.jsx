@@ -5,7 +5,7 @@ function HeaderNavigation({ router }) {
   const linkStyling = "text-gray-400";
 
   return (
-    <div className="flex mr-3 w-48 xl:w-64 justify-between">
+    <div className="flex mr-3 w-52 xl:w-56 justify-between">
       {router.pathname === "/" ? (
         <span className="text-primary">Home</span>
       ) : (
