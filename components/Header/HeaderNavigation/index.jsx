@@ -2,7 +2,7 @@ import { withRouter } from "next/router";
 import Link from "next/link";
 
 function HeaderNavigation({ router }) {
-  const linkStyling = "text-gray-400";
+  const linkStyling = "text-gray-400 hover:text-gray-500";
 
   return (
     <div className="flex mr-3 w-52 xl:w-56 justify-between">

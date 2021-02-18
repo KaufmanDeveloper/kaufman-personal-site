@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 import Header from "./Header";
+import Footer from "./Footer";
 
 const name = "Michael Kaufman";
 export const siteTitle = "Michael Kaufman's Blog";
@@ -29,13 +30,7 @@ export default function Layout({ children, home }) {
 
       <main className="mx-5">{children}</main>
 
-      {!home && (
-        <div>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+      <Footer />
     </div>
   );
 }

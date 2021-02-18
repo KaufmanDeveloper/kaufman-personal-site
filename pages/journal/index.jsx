@@ -1,9 +1,22 @@
 import Layout from "../../components/layout";
 
-export default function Journal() {
+import JournalComponent from "../../components/Journal";
+
+import { getSortedPostsData } from "../../lib/posts";
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
+
+export default function Journal({ allPostsData }) {
   return (
     <Layout>
-      <div>Journal</div>
+      <JournalComponent allPostsData={allPostsData} />
     </Layout>
   );
 }
