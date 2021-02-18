@@ -1,8 +1,9 @@
+import { withRouter } from "next/router";
 import Link from "next/link";
 
 import Modal from "react-awesome-modal";
 
-export default function HeaderModal({ modalIsOpen, toggleModal }) {
+function HeaderModal({ router, modalIsOpen, toggleModal }) {
   return (
     <Modal
       visible={modalIsOpen}
@@ -11,17 +12,31 @@ export default function HeaderModal({ modalIsOpen, toggleModal }) {
       effect="fadeInUp"
       onClickAway={toggleModal}
     >
-      <Link href="/about-me">
-        <a className="h-1/2 border-b border-gray-300 flex items-center justify-center text-primary text-3xl">
-          About Me
-        </a>
-      </Link>
+      {router.pathname !== "/" && (
+        <Link href="/">
+          <a className="h-1/2 border-b border-gray-300 flex items-center justify-center text-primary text-3xl">
+            Home
+          </a>
+        </Link>
+      )}
 
-      <Link href="/journal">
-        <a className="h-1/2 flex items-center justify-center text-primary text-3xl">
-          Journal
-        </a>
-      </Link>
+      {router.pathname !== "/about-me" && (
+        <Link href="/about-me">
+          <a className="h-1/2 border-b border-gray-300 flex items-center justify-center text-primary text-3xl">
+            About Me
+          </a>
+        </Link>
+      )}
+
+      {router.pathname !== "/journal" && (
+        <Link href="/journal">
+          <a className="h-1/2 flex items-center justify-center text-primary text-3xl">
+            Journal
+          </a>
+        </Link>
+      )}
     </Modal>
   );
 }
+
+export default withRouter(HeaderModal);
