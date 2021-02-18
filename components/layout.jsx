@@ -30,7 +30,9 @@ export default function Layout({ children, home }) {
 
       <main className="mx-5">{children}</main>
 
-      <Footer />
+      <div className="ml-4">
+        <Footer />
+      </div>
     </div>
   );
 }
