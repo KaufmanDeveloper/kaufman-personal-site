@@ -4,6 +4,8 @@ import { useState } from "react";
 
 import MenuIcon from "@material-ui/icons/Menu";
 
+import { screenSizes } from "../../helpers/constants";
+import useMediaQuery from "../../helpers/useMediaQuery";
 import HeaderModal from "./HeaderModal";
 
 export default function Header() {
@@ -13,10 +15,13 @@ export default function Header() {
       return !previousModalState;
     });
   };
+  const isMobileView = useMediaQuery(screenSizes.md);
 
   return (
     <>
-      <HeaderModal modalIsOpen={modalIsOpen} toggleModal={toggleModal} />
+      {isMobileView ? (
+        <HeaderModal modalIsOpen={modalIsOpen} toggleModal={toggleModal} />
+      ) : null}
 
       <header>
         <div className="mx-3 my-4 flex items-center justify-between">
@@ -36,9 +41,11 @@ export default function Header() {
             </div>
           </div>
 
-          <button onClick={toggleModal}>
-            <MenuIcon className="text-primary" style={{ fontSize: 44 }} />
-          </button>
+          {isMobileView ? (
+            <button onClick={toggleModal}>
+              <MenuIcon className="text-primary" style={{ fontSize: 44 }} />
+            </button>
+          ) : null}
         </div>
       </header>
     </>
