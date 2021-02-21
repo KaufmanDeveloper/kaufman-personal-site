@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import Layout from "../components/layout";
 import Journal from "../components/Journal";
+import ContentLink from "../components/ContentLink";
 
 import { screenSizes } from "../helpers/constants";
 import useMediaQuery from "../helpers/useMediaQuery";
@@ -53,8 +54,9 @@ export default function Home({ allPostsData }) {
         >
           I love to work and learn with teams that love creating shippable
           products. I've worked with a government team maintaining legacy
-          software as well as a team using the latest front end development
-          practices to rapidly develop and prototype.
+          software as well as an agricultural software development team using
+          the latest front end development practices to rapidly develop and
+          prototype.
         </SectionContent>
 
         <SectionContent
@@ -69,6 +71,16 @@ export default function Home({ allPostsData }) {
           />
         </SectionContent>
       </div>
+
+      <Section>
+        <SectionContent>
+          I believe in the principal of{" "}
+          <ContentLink href="https://en.wikipedia.org/wiki/Kaizen">
+            Kaizen
+          </ContentLink>
+          , or incremental development.
+        </SectionContent>
+      </Section>
 
       <div
         className={`${!isMobileView ? "flex items-center" : ""} w-full mt-12`}
