@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import FormatQuote from "@material-ui/icons/FormatQuote";
+
 import Layout from "../components/layout";
 import Journal from "../components/Journal";
 import ContentLink from "../components/ContentLink";
@@ -16,6 +18,7 @@ import {
 } from "../components/Content";
 
 import { getSortedPostsData } from "../lib/posts";
+import { QueueOutlined } from "@material-ui/icons";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -78,8 +81,20 @@ export default function Home({ allPostsData }) {
           <ContentLink href="https://en.wikipedia.org/wiki/Kaizen">
             Kaizen
           </ContentLink>
-          , or incremental development.
+          , or incremental development. Incremental improvement every day no
+          matter how small makes a big difference in your skill over time.
         </SectionContent>
+
+        <div className="flex justify-center my-4">
+          <FormatQuote
+            className="text-gray-500 mt-2 mx-1"
+            style={{ fontSize: 18 }}
+          />
+
+          <div className="text-center text-gray-500 text-xl mt-2">
+            Little by little, one travels far.
+          </div>
+        </div>
       </Section>
 
       <div
@@ -87,7 +102,7 @@ export default function Home({ allPostsData }) {
       >
         <Image
           className="rounded"
-          src="/images/mak-game.gif"
+          src="/images/labyrinth-video-2.gif"
           width={600}
           height={300}
           alt="Michael Kaufman"
