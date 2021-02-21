@@ -86,18 +86,16 @@ export default function Home({ allPostsData }) {
           , or incremental development. Incremental improvement every day no
           matter how small makes a big difference in your skill over time.
         </SectionContent>
-
-        <div className="flex justify-center my-4">
-          <FormatQuote
-            className="text-gray-500 mt-2 mx-1"
-            style={{ fontSize: 18 }}
-          />
-
-          <div className="text-center text-gray-500 text-xl mt-2">
-            Little by little, one travels far.
-          </div>
-        </div>
       </Section>
+      <div className="flex justify-center my-4">
+        <FormatQuote
+          className="text-gray-500 mt-2 mx-1"
+          style={{ fontSize: 18 }}
+        />
+        <div className="text-center text-gray-500 text-xl mt-2">
+          Little by little, one travels far.
+        </div>
+      </div>
 
       <div
         className={`${!isMobileView ? "flex items-center" : ""} w-full mt-12`}
