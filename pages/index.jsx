@@ -111,9 +111,10 @@ export default function Home({ allPostsData }) {
         <SectionContent
           className={`${!isMobileView ? "w-1/2 pl-16" : "px-6 pb-4"} my-6`}
         >
-          I love creating in whatever form. To keep up with my coding skills in
-          my free time, I work on building video games from the ground up using
-          the Godot game engine, which uses a language similar to Python.
+          ABC, or "Always Be Coding" is a practice I try to subscribe to. To
+          keep up with my coding skills in my free time, I work on building
+          video games from the ground up using the Godot game engine, which uses
+          a language similar to Python.
         </SectionContent>
       </div>
 
