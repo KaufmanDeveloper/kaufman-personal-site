@@ -3,18 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run build:style && next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build:style": "npx tailwindcss-cli@latest build -o ./styles/tailwind.css"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
     "classnames": "^2.2.6",
+    "date-fns": "^2.17.0",
     "gray-matter": "^4.0.2",
     "next": "^10.0.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
     "react": "17.0.1",
+    "react-awesome-modal": "^2.0.5",
     "react-dom": "17.0.1",
+    "remark": "^13.0.0",
+    "remark-html": "^13.0.1",
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {

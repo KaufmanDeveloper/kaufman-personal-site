@@ -1,8 +1,20 @@
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
 
 import Layout from "../components/layout";
+import Journal from "../components/Journal";
+import ContentLink from "../components/ContentLink";
+
+import { screenSizes } from "../helpers/constants";
+import useMediaQuery from "../helpers/useMediaQuery";
+
+import {
+  Section,
+  SectionHeader,
+  SectionContent,
+  SectionSubHeader,
+} from "../components/Content";
+
 import { getSortedPostsData } from "../lib/posts";
 
 export async function getStaticProps() {
@@ -15,235 +27,82 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+  const isMobileView = useMediaQuery(screenSizes.md);
+
   return (
     <Layout home>
       <Head>
-        <title>Create Next App</title>
+        <title>Michael Kaufman's Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Section>
+        <SectionHeader>Nice to meet you!</SectionHeader>
 
-      <main>
+        <SectionContent>
+          My name is Michael Kaufman. I’m a web developer based out of
+          Nashville, TN and I have a passion for making awesome things!
+        </SectionContent>
+      </Section>
+
+      <div
+        className={`${
+          !isMobileView ? "flex items-center" : ""
+        } w-full bg-gray-100 rounded mt-8`}
+      >
+        <SectionContent
+          className={`${!isMobileView ? "w-1/2 px-12" : "px-6 pt-4"}`}
+        >
+          I love to work and learn with teams that love creating shippable
+          products. I've worked with a government team maintaining legacy
+          software as well as an agricultural software development team using
+          the latest front end development practices to rapidly develop and
+          prototype.
+        </SectionContent>
+
+        <SectionContent
+          className={`${!isMobileView ? "w-1/2 px-10" : "px-6 pb-4"} my-6`}
+        >
+          <Image
+            className="rounded"
+            src="/images/email-template.png"
+            width={600}
+            height={300}
+            alt="Michael Kaufman"
+          />
+        </SectionContent>
+      </div>
+
+      <Section>
+        <SectionContent>
+          I believe in the principal of{" "}
+          <ContentLink href="https://en.wikipedia.org/wiki/Kaizen">
+            Kaizen
+          </ContentLink>
+          , or incremental development.
+        </SectionContent>
+      </Section>
+
+      <div
+        className={`${!isMobileView ? "flex items-center" : ""} w-full mt-12`}
+      >
         <Image
-          src="/images/profile.jpg"
-          height={144}
-          width={144}
-          alt="Your Name"
+          className="rounded"
+          src="/images/mak-game.gif"
+          width={600}
+          height={300}
+          alt="Michael Kaufman"
         />
 
-        <h1 className="title">
-          Read{" "}
-          <Link href="/posts/first-post">
-            <a>this page!</a>
-          </Link>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <SectionContent
+          className={`${!isMobileView ? "w-1/2 pl-16" : "px-6 pb-4"} my-6`}
         >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
+          I love creating in whatever form. To keep up with my coding skills in
+          my free time, I work on building video games from the ground up using
+          the Godot game engine, which uses a language similar to Python.
+        </SectionContent>
+      </div>
 
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-
-      {/* Add this <section> tag below the existing <section> tag */}
-      <section>
-        <h2 className="font-bold text-lg">Blog</h2>
-        <ul>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className="mb-2" key={id}>
-              {title}
-              <br />
-              {id}
-              <br />
-              {date}
-            </li>
-          ))}
-        </ul>
-      </section>
+      <Journal allPostsData={allPostsData} />
     </Layout>
   );
 }

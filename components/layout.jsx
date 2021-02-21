@@ -1,18 +1,20 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 
+import Header from "./Header";
+import Footer from "./Footer";
+
 const name = "Michael Kaufman";
-export const siteTitle = "Michael Kaufman Blog";
+export const siteTitle = "Michael Kaufman's Blog";
 
 export default function Layout({ children, home }) {
   return (
-    <div>
+    <div className="m-2 mb-24">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
+          name="Michael Kaufman's personal blog"
+          content="Read posts and learnings by Michael Kaufman"
         />
         <meta
           property="og:image"
@@ -23,47 +25,14 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header>
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  height={108}
-                  width={108}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2>
-              <Link href="/">
-                <a>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
-      </header>
-      <main>{children}</main>
-      {!home && (
-        <div>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+
+      <Header />
+
+      <main className="mx-5">{children}</main>
+
+      <div className="ml-4">
+        <Footer />
+      </div>
     </div>
   );
 }
