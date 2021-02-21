@@ -49,7 +49,7 @@ export default function Home({ allPostsData }) {
         } w-full bg-gray-100 rounded mt-8`}
       >
         <SectionContent
-          className={`${!isMobileView ? "w-1/2 px-12" : "px-6"} pt-4`}
+          className={`${!isMobileView ? "w-1/2 px-12" : "px-6 pt-4"}`}
         >
           I love to work and learn with teams that love creating shippable
           products. I've worked with a government team maintaining legacy
@@ -58,7 +58,7 @@ export default function Home({ allPostsData }) {
         </SectionContent>
 
         <SectionContent
-          className={`${!isMobileView ? "w-1/2 px-10" : "px-6"} my-6`}
+          className={`${!isMobileView ? "w-1/2 px-10" : "px-6 pb-4"} my-6`}
         >
           <Image
             className="rounded"
