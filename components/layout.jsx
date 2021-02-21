@@ -9,7 +9,7 @@ export const siteTitle = "Michael Kaufman's Blog";
 
 export default function Layout({ children, home }) {
   return (
-    <div className="m-2">
+    <div className="m-2 mb-24">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
