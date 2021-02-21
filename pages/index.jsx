@@ -63,11 +63,30 @@ export default function Home({ allPostsData }) {
           <Image
             className="rounded"
             src="/images/email-template.png"
-            layout="responsive"
             width={600}
             height={300}
             alt="Michael Kaufman"
           />
+        </SectionContent>
+      </div>
+
+      <div
+        className={`${!isMobileView ? "flex items-center" : ""} w-full mt-12`}
+      >
+        <Image
+          className="rounded"
+          src="/images/mak-game.gif"
+          width={600}
+          height={300}
+          alt="Michael Kaufman"
+        />
+
+        <SectionContent
+          className={`${!isMobileView ? "w-1/2 pl-16" : "px-6 pb-4"} my-6`}
+        >
+          I love creating in whatever form. To keep up with my coding skills in
+          my free time, I work on building video games from the ground up using
+          the Godot game engine, which uses a language similar to Python.
         </SectionContent>
       </div>
 

@@ -1,6 +1,13 @@
 function Section({ children, className }) {
+  const containsMarginStylingRegex = new RegExp("mt*");
+  const containsMarginStyling = containsMarginStylingRegex.test(className);
+
   return (
-    <section className={`mt-12 max-w-xl${className ? " " + className : ""}`}>
+    <section
+      className={`${containsMarginStyling ? "" : "mt-12"} max-w-xl${
+        className ? " " + className : ""
+      }`}
+    >
       {children}
     </section>
   );
