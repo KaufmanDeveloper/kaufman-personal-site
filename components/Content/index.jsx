@@ -40,11 +40,14 @@ function SectionContent({ children, className }) {
   const containsMarginStylingRegex = new RegExp("mt*");
   const containsMarginStyling = containsMarginStylingRegex.test(className);
 
+  const containsTextStylingRegex = new RegExp("text*");
+  const containsTextStyling = containsTextStylingRegex.test(className);
+
   return (
     <div
-      className={`${containsMarginStyling ? "" : "mt-8"} text-secondary${
-        className ? " " + className : ""
-      }`}
+      className={`${containsMarginStyling ? "" : "mt-8"} ${
+        containsTextStyling ? "" : "text-secondary"
+      }${className ? " " + className : ""}`}
     >
       {children}
     </div>

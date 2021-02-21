@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         primary: "#374151",
         secondary: "#4B5563",
+        accented: "#77abb7",
       },
       translate: {
         center: "-50%, -50%",

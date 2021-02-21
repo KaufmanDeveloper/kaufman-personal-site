@@ -50,10 +50,12 @@ export default function Home({ allPostsData }) {
       <div
         className={`${
           !isMobileView ? "flex items-center" : ""
-        } w-full bg-gray-100 rounded mt-8`}
+        } w-full bg-accented rounded mt-8`}
       >
         <SectionContent
-          className={`${!isMobileView ? "w-1/2 px-12" : "px-6 pt-4"}`}
+          className={`${
+            !isMobileView ? "w-1/2 px-12 mt-0" : "px-6 pt-4"
+          } text-white`}
         >
           I love to work and learn with teams that love creating shippable
           products. I've worked with a government team maintaining legacy
