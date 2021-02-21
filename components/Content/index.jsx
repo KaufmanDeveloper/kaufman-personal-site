@@ -1,13 +1,47 @@
-function Section({ children }) {
-  return <section className="mt-12 max-w-xl">{children}</section>;
+function Section({ children, className }) {
+  return (
+    <section className={`mt-12 max-w-xl${className ? " " + className : ""}`}>
+      {children}
+    </section>
+  );
 }
 
-function SectionHeader({ children }) {
-  return <h2 className="text-4xl text-primary">{children}</h2>;
+function SectionHeader({ children, className }) {
+  return (
+    <h2 className={`text-4xl text-primary${className ? " " + className : ""}`}>
+      {children}
+    </h2>
+  );
 }
 
-function SectionContent({ children }) {
-  return <div className="mt-8 text-secondary">{children}</div>;
+function SectionSubHeader({ children, className }) {
+  const containsMarginStylingRegex = new RegExp("mt*");
+  const containsMarginStyling = containsMarginStylingRegex.test(className);
+
+  return (
+    <h2
+      className={`${containsMarginStyling ? "" : "mt-8"} text-2xl text-primary${
+        className ? " " + className : ""
+      }`}
+    >
+      {children}
+    </h2>
+  );
 }
 
-export { Section, SectionHeader, SectionContent };
+function SectionContent({ children, className }) {
+  const containsMarginStylingRegex = new RegExp("mt*");
+  const containsMarginStyling = containsMarginStylingRegex.test(className);
+
+  return (
+    <div
+      className={`${containsMarginStyling ? "" : "mt-8"} text-secondary${
+        className ? " " + className : ""
+      }`}
+    >
+      {children}
+    </div>
+  );
+}
+
+export { Section, SectionHeader, SectionSubHeader, SectionContent };
