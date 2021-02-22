@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "npm run build:style && next dev",
-    "build": "next build",
+    "build": "npm run build:style && next build",
     "start": "next start",
     "build:style": "npx tailwindcss-cli@latest build -o ./styles/tailwind.css"
   },
