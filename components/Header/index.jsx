@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { useState } from "react";
 
@@ -27,19 +28,21 @@ export default function Header() {
 
       <header>
         <div className="mx-3 my-4 flex items-center justify-between">
-          <div className="flex items-center">
-            <Image
-              className="rounded-full"
-              src="/images/profile.jpg"
-              height={44}
-              width={44}
-              alt="Michael Kaufman"
-            />
-            <div className="flex flex-col ml-2">
-              <span className="text-secondary text-sm">Michael</span>
-              <span className="text-primary font-semibold">Kaufman</span>
-            </div>
-          </div>
+          <Link href="/">
+            <a className="flex items-center">
+              <Image
+                className="rounded-full"
+                src="/images/profile.jpg"
+                height={44}
+                width={44}
+                alt="Michael Kaufman"
+              />
+              <div className="flex flex-col ml-2">
+                <span className="text-secondary text-sm">Michael</span>
+                <span className="text-primary font-semibold">Kaufman</span>
+              </div>
+            </a>
+          </Link>
 
           {isMobileView ? (
             <button onClick={toggleModal}>
