@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 import Header from "./Header";
-import Footer from "./Footer";
+import Footer from "./footer";
 
 export const siteTitle = "Michael Kaufman's Blog";
 
