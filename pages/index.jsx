@@ -10,15 +10,9 @@ import ContentLink from "../components/ContentLink";
 import { screenSizes } from "../helpers/constants";
 import useMediaQuery from "../helpers/useMediaQuery";
 
-import {
-  Section,
-  SectionHeader,
-  SectionContent,
-  SectionSubHeader,
-} from "../components/Content";
+import { Section, SectionHeader, SectionContent } from "../components/Content";
 
 import { getSortedPostsData } from "../lib/posts";
-import { QueueOutlined } from "@material-ui/icons";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
