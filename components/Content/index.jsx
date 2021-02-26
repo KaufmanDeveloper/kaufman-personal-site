@@ -15,7 +15,11 @@ function Section({ children, className }) {
 
 function SectionHeader({ children, className }) {
   return (
-    <h2 className={`text-4xl text-primary${className ? " " + className : ""}`}>
+    <h2
+      className={`text-4xl lg:text-6xl text-primary${
+        className ? " " + className : ""
+      }`}
+    >
       {children}
     </h2>
   );
@@ -27,9 +31,9 @@ function SectionSubHeader({ children, className }) {
 
   return (
     <h2
-      className={`${containsMarginStyling ? "" : "mt-8"} text-2xl text-primary${
-        className ? " " + className : ""
-      }`}
+      className={`${
+        containsMarginStyling ? "" : "mt-8 lg:mt-12"
+      } text-2xl lg:text-4xl text-primary${className ? " " + className : ""}`}
     >
       {children}
     </h2>
@@ -45,9 +49,9 @@ function SectionContent({ children, className }) {
 
   return (
     <div
-      className={`${containsMarginStyling ? "" : "mt-8"} ${
+      className={`${containsMarginStyling ? "" : "mt-8 lg:mt-12"} ${
         containsTextStyling ? "" : "text-secondary"
-      }${className ? " " + className : ""}`}
+      }${className ? " " + className : ""} text-base lg:text-lg lg:leading-7`}
     >
       {children}
     </div>
