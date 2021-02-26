@@ -1,8 +1,16 @@
 import Head from "next/head";
 
+import {
+  Section,
+  SectionContent,
+  SectionHeader,
+} from "../../components/Content";
 import Layout from "../../components/layout";
 import Date from "../../components/date";
+
 import { getAllPostIds, getPostData } from "../../lib/posts";
+
+import postStyles from "./posts.module.css";
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
@@ -27,14 +35,18 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
 
-      <article>
-        {postData.title}
-        <br />
-        {postData.id}
-        <br />
-        <Date dateString={postData.date} />
-        <br />
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      <article className={postStyles.posts}>
+        <Section>
+          <SectionHeader>{postData.title}</SectionHeader>
+
+          <div className="mt-4 text-gray-500">
+            <Date dateString={postData.date} />
+          </div>
+
+          <SectionContent className="posts w-full lg:w-8/12">
+            <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+          </SectionContent>
+        </Section>
       </article>
     </Layout>
   );

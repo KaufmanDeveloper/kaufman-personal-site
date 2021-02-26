@@ -44,7 +44,7 @@ export default function Home({ allPostsData }) {
       <div
         className={`${
           !isMobileView ? "flex items-center" : ""
-        } w-full bg-accented rounded mt-8`}
+        } w-full bg-accented rounded mt-8 lg:mt-12`}
       >
         <SectionContent
           className={`${
@@ -64,8 +64,8 @@ export default function Home({ allPostsData }) {
           <Image
             className="rounded"
             src="/images/email-template.png"
-            width={600}
-            height={300}
+            width={isMobileView ? 600 : 1200}
+            height={isMobileView ? 300 : 600}
             alt="Michael Kaufman"
           />
         </SectionContent>
@@ -86,13 +86,15 @@ export default function Home({ allPostsData }) {
           className="text-gray-500 mt-2 mx-1"
           style={{ fontSize: 18 }}
         />
-        <div className="text-center text-gray-500 text-xl mt-2">
+        <div className="text-center text-gray-500 text-xl mt-2 lg:mt-6">
           Little by little, one travels far.
         </div>
       </div>
 
       <div
-        className={`${!isMobileView ? "flex items-center" : ""} w-full mt-12`}
+        className={`${
+          !isMobileView ? "flex items-center" : ""
+        } w-full mt-12 lg:mt-14`}
       >
         <Image
           className="rounded"
