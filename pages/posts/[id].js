@@ -43,7 +43,7 @@ export default function Post({ postData }) {
             <Date dateString={postData.date} />
           </div>
 
-          <SectionContent className="posts">
+          <SectionContent className="posts w-full lg:w-8/12">
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
           </SectionContent>
         </Section>
