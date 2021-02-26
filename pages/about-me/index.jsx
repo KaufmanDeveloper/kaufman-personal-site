@@ -38,16 +38,16 @@ export default function AboutMe() {
           </div>
 
           <List className="mt-3">
-            <li>
+            <List.Item>
               Used Tailwind CSS and React to build UI library from the ground up
-            </li>
-            <li>
+            </List.Item>
+            <List.Item>
               Implemented responsive design using mobile first breakpoints
-            </li>
-            <li>
+            </List.Item>
+            <List.Item>
               Built Express service with containerized backend for rapid
               development
-            </li>
+            </List.Item>
           </List>
         </SectionContent>
 
@@ -59,18 +59,18 @@ export default function AboutMe() {
           </div>
 
           <List className="mt-3">
-            <li>
+            <List.Item>
               Created a deployment application using Github's API to display
               information dealing with previous releases
-            </li>
-            <li>
+            </List.Item>
+            <List.Item>
               Updated email templates and a corresponding service that sent
               roughly 100,000 emails to customers a month
-            </li>
-            <li>
+            </List.Item>
+            <List.Item>
               Maintained and iterated on internal applications and customer
               facing website
-            </li>
+            </List.Item>
           </List>
         </SectionContent>
       </Section>
@@ -78,14 +78,14 @@ export default function AboutMe() {
       <SectionSubHeader>Technology</SectionSubHeader>
 
       <List className="mt-3">
-        <li>React</li>
-        <li>Tailwind CSS</li>
-        <li>Mapbox</li>
-        <li>Ember</li>
-        <li>Figma</li>
-        <li>Express</li>
-        <li>Docker</li>
-        <li>Java</li>
+        <List.Item>React</List.Item>
+        <List.Item>Tailwind CSS</List.Item>
+        <List.Item>Mapbox</List.Item>
+        <List.Item>Ember</List.Item>
+        <List.Item>Figma</List.Item>
+        <List.Item>Express</List.Item>
+        <List.Item>Docker</List.Item>
+        <List.Item>Java</List.Item>
       </List>
 
       <SectionSubHeader>Education</SectionSubHeader>

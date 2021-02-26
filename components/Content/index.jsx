@@ -4,7 +4,7 @@ function Section({ children, className }) {
 
   return (
     <section
-      className={`${containsMarginStyling ? "" : "mt-12"} max-w-xl${
+      className={`${containsMarginStyling ? "" : "mt-12"} w-full lg:w-11/12${
         className ? " " + className : ""
       }`}
     >
