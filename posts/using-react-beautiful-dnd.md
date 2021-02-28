@@ -1,6 +1,6 @@
 ---
 title: "Using React Beautiful Drag n Drop"
-date: "2020-02-21"
+date: "2020-02-27"
 ---
 
 Learnings of this process.

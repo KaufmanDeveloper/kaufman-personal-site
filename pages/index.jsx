@@ -44,7 +44,7 @@ export default function Home({ allPostsData }) {
       <div
         className={`${
           !isMobileView ? "flex items-center" : ""
-        } w-full bg-accented rounded mt-8 lg:mt-12`}
+        } w-full bg-accented rounded mt-8 lg:mt-16`}
       >
         <SectionContent
           className={`${
@@ -86,7 +86,7 @@ export default function Home({ allPostsData }) {
           className="text-gray-500 mt-2 mx-1"
           style={{ fontSize: 18 }}
         />
-        <div className="text-center text-gray-500 text-xl mt-2 lg:mt-6">
+        <div className="text-center text-gray-500 text-xl lg:text-2xl mt-2 lg:mt-12">
           Little by little, one travels far.
         </div>
       </div>
@@ -94,7 +94,7 @@ export default function Home({ allPostsData }) {
       <div
         className={`${
           !isMobileView ? "flex items-center" : ""
-        } w-full mt-12 lg:mt-14`}
+        } w-full mt-12 lg:mt-16`}
       >
         <Image
           className="rounded"

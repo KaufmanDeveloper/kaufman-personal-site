@@ -16,3 +16,13 @@
   font-size: 2.125rem;
   line-height: 2.75rem;
 }
+
+.posts ul {
+  list-style-type: disc;
+  margin-left: 1.1rem;
+}
+
+.posts ol {
+  list-style-type: decimal;
+  margin-left: 1.1rem;
+}
