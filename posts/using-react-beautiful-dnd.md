@@ -1,22 +1,13 @@
 ---
 title: "Using React Beautiful Drag n Drop"
-date: "2020-02-21"
+date: "2020-02-27"
 ---
 
-Learnings of this process.
+[React Beautiful Drag n Drop](https://github.com/atlassian/react-beautiful-dnd) is a fantastic tool for implementing Kanban tools in your application. It supports cross column drag and drop, though it doesn't support x and y coordinate drag and drop like a library like [react-draggable](https://github.com/STRML/react-draggable).
 
-My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
+Detecting if element is currently being dragged or dragged over is built in and makes conditional styling simple. Having built in methods for defining drag handles also reduces the complexity of implementing those.
 
-Example list:
+### API considerations
 
-1. Blah
-2. Blah
-3. blah
-
-Unorder:
-
-- Blah
-- Blah2
-- Blah3
-
-[React Beautiful Drag n Drop](https://github.com/atlassian/react-beautiful-dnd) is a fantastic tool for implementing Kanban tools in your application.
+- Optimistic updates are probably best, with toast messages for reporting API errors
+- It may be simplest to use ordered lists of items within `Column` objects, though this would require two API calls per move action

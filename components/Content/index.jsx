@@ -49,7 +49,7 @@ function SectionContent({ children, className }) {
 
   return (
     <div
-      className={`${containsMarginStyling ? "" : "mt-8 lg:mt-12"} ${
+      className={`${containsMarginStyling ? "" : "mt-8 lg:mt-14"} ${
         containsTextStyling ? "" : "text-secondary"
       }${className ? " " + className : ""} text-base lg:text-lg lg:leading-7`}
     >
