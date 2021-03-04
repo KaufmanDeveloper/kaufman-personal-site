@@ -83,7 +83,7 @@ export default function Home({ allPostsData }) {
       </Section>
       <div className="flex justify-center my-4">
         <FormatQuote
-          className="text-gray-500 mt-2 mx-1"
+          className="text-gray-500 mt-2 lg:mt-12 mx-1"
           style={{ fontSize: 18 }}
         />
         <div className="text-center text-gray-500 text-xl lg:text-2xl mt-2 lg:mt-12">
