@@ -15,9 +15,9 @@ export default function AboutMe() {
 
         <SectionContent>
           I'm a front end web developer with full stack web development
-          experience. I've built custom tools and draw modes for maps using
-          Mapbox. Using React and Tailwind CSS I've built a UI library as well
-          an application that consumes the library.
+          experience. Using React and Tailwind CSS I've built a UI library as
+          well an application that consumes the library. I've also built custom
+          tools and draw modes for maps using Mapbox.
         </SectionContent>
 
         <SectionContent className="mt-4">
