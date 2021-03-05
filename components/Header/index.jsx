@@ -29,7 +29,7 @@ export default function Header() {
       <header>
         <div className="mx-3 my-4 flex items-center justify-between">
           <Link href="/">
-            <a className="flex items-center">
+            <a className="flex items-center hover:opacity-90">
               <Image
                 className="rounded-full"
                 src="/images/profile.jpg"
