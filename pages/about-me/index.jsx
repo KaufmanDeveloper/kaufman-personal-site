@@ -45,17 +45,11 @@ export default function AboutMe() {
             </div>
 
             <List className="mt-3">
-              <List.Item>
-                Used Tailwind CSS and React to build UI library from the ground
-                up
-              </List.Item>
+              <List.Item>Used Tailwind CSS and React</List.Item>
               <List.Item>
                 Implemented responsive design using mobile first breakpoints
               </List.Item>
-              <List.Item>
-                Built Express service with containerized backend for rapid
-                development
-              </List.Item>
+              <List.Item>Learned containerization and Express</List.Item>
             </List>
           </SectionContent>
 
