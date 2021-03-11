@@ -18,6 +18,7 @@ module.exports = {
         full: "100vh",
         half: "50vh",
       },
+      minHeight: { 90: "90vh" },
     },
   },
   variants: {

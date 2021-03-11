@@ -10,42 +10,45 @@ export const siteTitle = "Michael Kaufman's Blog";
 
 function Layout({ router, children }) {
   return (
-    <div className="mb-24">
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="Michael Kaufman's personal blog"
-          content="Read posts and learnings by Michael Kaufman"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      <div className="m-2">
-        <Header />
-      </div>
-
-      {router.pathname === "/" && (
-        <div className="relative pt-half md:pt-full overflow-hidden">
-          <Image
-            className=""
-            src="/images/at-desk.jpeg"
-            alt="Michael Kaufman"
-            layout="fill"
-            objectFit="cover"
+    <div>
+      <div className="min-h-90">
+        <Head>
+          <link rel="icon" href="/favicon.ico" />
+          <meta
+            name="Michael Kaufman's personal blog"
+            content="Read posts and learnings by Michael Kaufman"
           />
-        </div>
-      )}
+          <meta
+            property="og:image"
+            content={`https://og-image.vercel.app/${encodeURI(
+              siteTitle
+            )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          />
+          <meta name="og:title" content={siteTitle} />
+          <meta name="twitter:card" content="summary_large_image" />
+        </Head>
 
-      <main className="mx-5">{children}</main>
+        {router.pathname === "/" ? (
+          <div className="relative pt-half md:pt-full overflow-hidden">
+            <Header isHomeVersion />
 
-      <div className="ml-4">
+            <Image
+              className=""
+              src="/images/at-desk.jpeg"
+              alt="Michael Kaufman"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+        ) : (
+          <div className="m-2">
+            <Header />
+          </div>
+        )}
+
+        <main className="mx-5">{children}</main>
+      </div>
+      <div>
         <Footer />
       </div>
     </div>

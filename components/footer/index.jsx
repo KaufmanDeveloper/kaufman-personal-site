@@ -6,8 +6,8 @@ import TwitterIcon from "./TwitterIcon";
 
 export default function Footer() {
   return (
-    <div className="relative">
-      <div className="fixed w-full bottom-0 py-4 pl-6 bg-white border-t -ml-6">
+    <div className="relative pb-16">
+      <div className="w-full absolute bottom-0 h-16 flex justify-center py-4 border-t">
         <div className="w-32 flex items-center justify-between">
           <Link href="https://github.com/KaufmanDeveloper">
             <a>
