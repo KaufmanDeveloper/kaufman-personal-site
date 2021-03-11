@@ -14,6 +14,9 @@ module.exports = {
       zIndex: {
         "-10": "-10",
       },
+      padding: {
+        full: "100%",
+      },
     },
   },
   variants: {

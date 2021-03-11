@@ -29,14 +29,15 @@ export default function Layout({ children }) {
         <Header />
       </div>
 
-      <Image
-        className="-z-10"
-        src="/images/at-desk.jpeg"
-        alt="Michael Kaufman"
-        layout="responsive"
-        width={700}
-        height={475}
-      />
+      <div className="relative pt-full overflow-hidden">
+        <Image
+          className=""
+          src="/images/at-desk.jpeg"
+          alt="Michael Kaufman"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
 
       <main className="mx-5">{children}</main>
 

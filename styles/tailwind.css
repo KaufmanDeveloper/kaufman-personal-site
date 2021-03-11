@@ -14942,6 +14942,10 @@ video {
   padding: 0.875rem;
 }
 
+.p-full {
+  padding: 100%;
+}
+
 .py-0 {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -15290,6 +15294,16 @@ video {
 .px-3\.5 {
   padding-left: 0.875rem;
   padding-right: 0.875rem;
+}
+
+.py-full {
+  padding-top: 100%;
+  padding-bottom: 100%;
+}
+
+.px-full {
+  padding-left: 100%;
+  padding-right: 100%;
 }
 
 .pt-0 {
@@ -15850,6 +15864,22 @@ video {
 
 .pl-3\.5 {
   padding-left: 0.875rem;
+}
+
+.pt-full {
+  padding-top: 100%;
+}
+
+.pr-full {
+  padding-right: 100%;
+}
+
+.pb-full {
+  padding-bottom: 100%;
+}
+
+.pl-full {
+  padding-left: 100%;
 }
 
 .placeholder-transparent::-moz-placeholder {
@@ -46131,6 +46161,10 @@ video {
     padding: 0.875rem;
   }
 
+  .sm\:p-full {
+    padding: 100%;
+  }
+
   .sm\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -46479,6 +46513,16 @@ video {
   .sm\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .sm\:py-full {
+    padding-top: 100%;
+    padding-bottom: 100%;
+  }
+
+  .sm\:px-full {
+    padding-left: 100%;
+    padding-right: 100%;
   }
 
   .sm\:pt-0 {
@@ -47039,6 +47083,22 @@ video {
 
   .sm\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .sm\:pt-full {
+    padding-top: 100%;
+  }
+
+  .sm\:pr-full {
+    padding-right: 100%;
+  }
+
+  .sm\:pb-full {
+    padding-bottom: 100%;
+  }
+
+  .sm\:pl-full {
+    padding-left: 100%;
   }
 
   .sm\:placeholder-transparent::-moz-placeholder {
@@ -77242,6 +77302,10 @@ video {
     padding: 0.875rem;
   }
 
+  .md\:p-full {
+    padding: 100%;
+  }
+
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -77590,6 +77654,16 @@ video {
   .md\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .md\:py-full {
+    padding-top: 100%;
+    padding-bottom: 100%;
+  }
+
+  .md\:px-full {
+    padding-left: 100%;
+    padding-right: 100%;
   }
 
   .md\:pt-0 {
@@ -78150,6 +78224,22 @@ video {
 
   .md\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .md\:pt-full {
+    padding-top: 100%;
+  }
+
+  .md\:pr-full {
+    padding-right: 100%;
+  }
+
+  .md\:pb-full {
+    padding-bottom: 100%;
+  }
+
+  .md\:pl-full {
+    padding-left: 100%;
   }
 
   .md\:placeholder-transparent::-moz-placeholder {
@@ -108353,6 +108443,10 @@ video {
     padding: 0.875rem;
   }
 
+  .lg\:p-full {
+    padding: 100%;
+  }
+
   .lg\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -108701,6 +108795,16 @@ video {
   .lg\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .lg\:py-full {
+    padding-top: 100%;
+    padding-bottom: 100%;
+  }
+
+  .lg\:px-full {
+    padding-left: 100%;
+    padding-right: 100%;
   }
 
   .lg\:pt-0 {
@@ -109261,6 +109365,22 @@ video {
 
   .lg\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .lg\:pt-full {
+    padding-top: 100%;
+  }
+
+  .lg\:pr-full {
+    padding-right: 100%;
+  }
+
+  .lg\:pb-full {
+    padding-bottom: 100%;
+  }
+
+  .lg\:pl-full {
+    padding-left: 100%;
   }
 
   .lg\:placeholder-transparent::-moz-placeholder {
@@ -139464,6 +139584,10 @@ video {
     padding: 0.875rem;
   }
 
+  .xl\:p-full {
+    padding: 100%;
+  }
+
   .xl\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -139812,6 +139936,16 @@ video {
   .xl\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .xl\:py-full {
+    padding-top: 100%;
+    padding-bottom: 100%;
+  }
+
+  .xl\:px-full {
+    padding-left: 100%;
+    padding-right: 100%;
   }
 
   .xl\:pt-0 {
@@ -140372,6 +140506,22 @@ video {
 
   .xl\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .xl\:pt-full {
+    padding-top: 100%;
+  }
+
+  .xl\:pr-full {
+    padding-right: 100%;
+  }
+
+  .xl\:pb-full {
+    padding-bottom: 100%;
+  }
+
+  .xl\:pl-full {
+    padding-left: 100%;
   }
 
   .xl\:placeholder-transparent::-moz-placeholder {
@@ -170575,6 +170725,10 @@ video {
     padding: 0.875rem;
   }
 
+  .\32xl\:p-full {
+    padding: 100%;
+  }
+
   .\32xl\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -170923,6 +171077,16 @@ video {
   .\32xl\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .\32xl\:py-full {
+    padding-top: 100%;
+    padding-bottom: 100%;
+  }
+
+  .\32xl\:px-full {
+    padding-left: 100%;
+    padding-right: 100%;
   }
 
   .\32xl\:pt-0 {
@@ -171483,6 +171647,22 @@ video {
 
   .\32xl\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .\32xl\:pt-full {
+    padding-top: 100%;
+  }
+
+  .\32xl\:pr-full {
+    padding-right: 100%;
+  }
+
+  .\32xl\:pb-full {
+    padding-bottom: 100%;
+  }
+
+  .\32xl\:pl-full {
+    padding-left: 100%;
   }
 
   .\32xl\:placeholder-transparent::-moz-placeholder {
