@@ -1,12 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import { withRouter } from "next/router";
+
 import Header from "./Header";
 import Footer from "./footer";
 
 export const siteTitle = "Michael Kaufman's Blog";
 
-export default function Layout({ children }) {
+function Layout({ router, children }) {
   return (
     <div className="mb-24">
       <Head>
@@ -29,15 +31,17 @@ export default function Layout({ children }) {
         <Header />
       </div>
 
-      <div className="relative pt-full overflow-hidden">
-        <Image
-          className=""
-          src="/images/at-desk.jpeg"
-          alt="Michael Kaufman"
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
+      {router.pathname === "/" && (
+        <div className="relative pt-half md:pt-full overflow-hidden">
+          <Image
+            className=""
+            src="/images/at-desk.jpeg"
+            alt="Michael Kaufman"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+      )}
 
       <main className="mx-5">{children}</main>
 
@@ -47,3 +51,5 @@ export default function Layout({ children }) {
     </div>
   );
 }
+
+export default withRouter(Layout);

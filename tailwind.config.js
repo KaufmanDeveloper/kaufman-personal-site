@@ -15,7 +15,8 @@ module.exports = {
         "-10": "-10",
       },
       padding: {
-        full: "100%",
+        full: "100vh",
+        half: "50vh",
       },
     },
   },

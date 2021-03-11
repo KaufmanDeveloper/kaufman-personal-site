@@ -14943,7 +14943,11 @@ video {
 }
 
 .p-full {
-  padding: 100%;
+  padding: 100vh;
+}
+
+.p-half {
+  padding: 50vh;
 }
 
 .py-0 {
@@ -15297,13 +15301,23 @@ video {
 }
 
 .py-full {
-  padding-top: 100%;
-  padding-bottom: 100%;
+  padding-top: 100vh;
+  padding-bottom: 100vh;
 }
 
 .px-full {
-  padding-left: 100%;
-  padding-right: 100%;
+  padding-left: 100vh;
+  padding-right: 100vh;
+}
+
+.py-half {
+  padding-top: 50vh;
+  padding-bottom: 50vh;
+}
+
+.px-half {
+  padding-left: 50vh;
+  padding-right: 50vh;
 }
 
 .pt-0 {
@@ -15867,19 +15881,35 @@ video {
 }
 
 .pt-full {
-  padding-top: 100%;
+  padding-top: 100vh;
 }
 
 .pr-full {
-  padding-right: 100%;
+  padding-right: 100vh;
 }
 
 .pb-full {
-  padding-bottom: 100%;
+  padding-bottom: 100vh;
 }
 
 .pl-full {
-  padding-left: 100%;
+  padding-left: 100vh;
+}
+
+.pt-half {
+  padding-top: 50vh;
+}
+
+.pr-half {
+  padding-right: 50vh;
+}
+
+.pb-half {
+  padding-bottom: 50vh;
+}
+
+.pl-half {
+  padding-left: 50vh;
 }
 
 .placeholder-transparent::-moz-placeholder {
@@ -46162,7 +46192,11 @@ video {
   }
 
   .sm\:p-full {
-    padding: 100%;
+    padding: 100vh;
+  }
+
+  .sm\:p-half {
+    padding: 50vh;
   }
 
   .sm\:py-0 {
@@ -46516,13 +46550,23 @@ video {
   }
 
   .sm\:py-full {
-    padding-top: 100%;
-    padding-bottom: 100%;
+    padding-top: 100vh;
+    padding-bottom: 100vh;
   }
 
   .sm\:px-full {
-    padding-left: 100%;
-    padding-right: 100%;
+    padding-left: 100vh;
+    padding-right: 100vh;
+  }
+
+  .sm\:py-half {
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+  }
+
+  .sm\:px-half {
+    padding-left: 50vh;
+    padding-right: 50vh;
   }
 
   .sm\:pt-0 {
@@ -47086,19 +47130,35 @@ video {
   }
 
   .sm\:pt-full {
-    padding-top: 100%;
+    padding-top: 100vh;
   }
 
   .sm\:pr-full {
-    padding-right: 100%;
+    padding-right: 100vh;
   }
 
   .sm\:pb-full {
-    padding-bottom: 100%;
+    padding-bottom: 100vh;
   }
 
   .sm\:pl-full {
-    padding-left: 100%;
+    padding-left: 100vh;
+  }
+
+  .sm\:pt-half {
+    padding-top: 50vh;
+  }
+
+  .sm\:pr-half {
+    padding-right: 50vh;
+  }
+
+  .sm\:pb-half {
+    padding-bottom: 50vh;
+  }
+
+  .sm\:pl-half {
+    padding-left: 50vh;
   }
 
   .sm\:placeholder-transparent::-moz-placeholder {
@@ -77303,7 +77363,11 @@ video {
   }
 
   .md\:p-full {
-    padding: 100%;
+    padding: 100vh;
+  }
+
+  .md\:p-half {
+    padding: 50vh;
   }
 
   .md\:py-0 {
@@ -77657,13 +77721,23 @@ video {
   }
 
   .md\:py-full {
-    padding-top: 100%;
-    padding-bottom: 100%;
+    padding-top: 100vh;
+    padding-bottom: 100vh;
   }
 
   .md\:px-full {
-    padding-left: 100%;
-    padding-right: 100%;
+    padding-left: 100vh;
+    padding-right: 100vh;
+  }
+
+  .md\:py-half {
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+  }
+
+  .md\:px-half {
+    padding-left: 50vh;
+    padding-right: 50vh;
   }
 
   .md\:pt-0 {
@@ -78227,19 +78301,35 @@ video {
   }
 
   .md\:pt-full {
-    padding-top: 100%;
+    padding-top: 100vh;
   }
 
   .md\:pr-full {
-    padding-right: 100%;
+    padding-right: 100vh;
   }
 
   .md\:pb-full {
-    padding-bottom: 100%;
+    padding-bottom: 100vh;
   }
 
   .md\:pl-full {
-    padding-left: 100%;
+    padding-left: 100vh;
+  }
+
+  .md\:pt-half {
+    padding-top: 50vh;
+  }
+
+  .md\:pr-half {
+    padding-right: 50vh;
+  }
+
+  .md\:pb-half {
+    padding-bottom: 50vh;
+  }
+
+  .md\:pl-half {
+    padding-left: 50vh;
   }
 
   .md\:placeholder-transparent::-moz-placeholder {
@@ -108444,7 +108534,11 @@ video {
   }
 
   .lg\:p-full {
-    padding: 100%;
+    padding: 100vh;
+  }
+
+  .lg\:p-half {
+    padding: 50vh;
   }
 
   .lg\:py-0 {
@@ -108798,13 +108892,23 @@ video {
   }
 
   .lg\:py-full {
-    padding-top: 100%;
-    padding-bottom: 100%;
+    padding-top: 100vh;
+    padding-bottom: 100vh;
   }
 
   .lg\:px-full {
-    padding-left: 100%;
-    padding-right: 100%;
+    padding-left: 100vh;
+    padding-right: 100vh;
+  }
+
+  .lg\:py-half {
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+  }
+
+  .lg\:px-half {
+    padding-left: 50vh;
+    padding-right: 50vh;
   }
 
   .lg\:pt-0 {
@@ -109368,19 +109472,35 @@ video {
   }
 
   .lg\:pt-full {
-    padding-top: 100%;
+    padding-top: 100vh;
   }
 
   .lg\:pr-full {
-    padding-right: 100%;
+    padding-right: 100vh;
   }
 
   .lg\:pb-full {
-    padding-bottom: 100%;
+    padding-bottom: 100vh;
   }
 
   .lg\:pl-full {
-    padding-left: 100%;
+    padding-left: 100vh;
+  }
+
+  .lg\:pt-half {
+    padding-top: 50vh;
+  }
+
+  .lg\:pr-half {
+    padding-right: 50vh;
+  }
+
+  .lg\:pb-half {
+    padding-bottom: 50vh;
+  }
+
+  .lg\:pl-half {
+    padding-left: 50vh;
   }
 
   .lg\:placeholder-transparent::-moz-placeholder {
@@ -139585,7 +139705,11 @@ video {
   }
 
   .xl\:p-full {
-    padding: 100%;
+    padding: 100vh;
+  }
+
+  .xl\:p-half {
+    padding: 50vh;
   }
 
   .xl\:py-0 {
@@ -139939,13 +140063,23 @@ video {
   }
 
   .xl\:py-full {
-    padding-top: 100%;
-    padding-bottom: 100%;
+    padding-top: 100vh;
+    padding-bottom: 100vh;
   }
 
   .xl\:px-full {
-    padding-left: 100%;
-    padding-right: 100%;
+    padding-left: 100vh;
+    padding-right: 100vh;
+  }
+
+  .xl\:py-half {
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+  }
+
+  .xl\:px-half {
+    padding-left: 50vh;
+    padding-right: 50vh;
   }
 
   .xl\:pt-0 {
@@ -140509,19 +140643,35 @@ video {
   }
 
   .xl\:pt-full {
-    padding-top: 100%;
+    padding-top: 100vh;
   }
 
   .xl\:pr-full {
-    padding-right: 100%;
+    padding-right: 100vh;
   }
 
   .xl\:pb-full {
-    padding-bottom: 100%;
+    padding-bottom: 100vh;
   }
 
   .xl\:pl-full {
-    padding-left: 100%;
+    padding-left: 100vh;
+  }
+
+  .xl\:pt-half {
+    padding-top: 50vh;
+  }
+
+  .xl\:pr-half {
+    padding-right: 50vh;
+  }
+
+  .xl\:pb-half {
+    padding-bottom: 50vh;
+  }
+
+  .xl\:pl-half {
+    padding-left: 50vh;
   }
 
   .xl\:placeholder-transparent::-moz-placeholder {
@@ -170726,7 +170876,11 @@ video {
   }
 
   .\32xl\:p-full {
-    padding: 100%;
+    padding: 100vh;
+  }
+
+  .\32xl\:p-half {
+    padding: 50vh;
   }
 
   .\32xl\:py-0 {
@@ -171080,13 +171234,23 @@ video {
   }
 
   .\32xl\:py-full {
-    padding-top: 100%;
-    padding-bottom: 100%;
+    padding-top: 100vh;
+    padding-bottom: 100vh;
   }
 
   .\32xl\:px-full {
-    padding-left: 100%;
-    padding-right: 100%;
+    padding-left: 100vh;
+    padding-right: 100vh;
+  }
+
+  .\32xl\:py-half {
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+  }
+
+  .\32xl\:px-half {
+    padding-left: 50vh;
+    padding-right: 50vh;
   }
 
   .\32xl\:pt-0 {
@@ -171650,19 +171814,35 @@ video {
   }
 
   .\32xl\:pt-full {
-    padding-top: 100%;
+    padding-top: 100vh;
   }
 
   .\32xl\:pr-full {
-    padding-right: 100%;
+    padding-right: 100vh;
   }
 
   .\32xl\:pb-full {
-    padding-bottom: 100%;
+    padding-bottom: 100vh;
   }
 
   .\32xl\:pl-full {
-    padding-left: 100%;
+    padding-left: 100vh;
+  }
+
+  .\32xl\:pt-half {
+    padding-top: 50vh;
+  }
+
+  .\32xl\:pr-half {
+    padding-right: 50vh;
+  }
+
+  .\32xl\:pb-half {
+    padding-bottom: 50vh;
+  }
+
+  .\32xl\:pl-half {
+    padding-left: 50vh;
   }
 
   .\32xl\:placeholder-transparent::-moz-placeholder {
