@@ -29,7 +29,7 @@ export default function Header({ isHomeVersion }) {
       <header>
         <div
           className={`mx-3 my-4 flex items-center justify-between ${
-            isHomeVersion && "absolute z-50 top-0 right-0 px-3 py-4"
+            isHomeVersion && "absolute z-50 top-0 right-0 mx-5 my-6"
           }`}
         >
           {!isHomeVersion && (

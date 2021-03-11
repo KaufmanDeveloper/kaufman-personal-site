@@ -29,12 +29,12 @@ function Layout({ router, children }) {
         </Head>
 
         {router.pathname === "/" ? (
-          <div className="relative pt-half md:pt-full overflow-hidden">
+          <div className="relative pt-half md:pt-most overflow-hidden">
             <Header isHomeVersion />
 
             <Image
               className=""
-              src="/images/at-desk.jpeg"
+              src="/images/me-and-ellie.jpg"
               alt="Michael Kaufman"
               layout="fill"
               objectFit="cover"

@@ -14950,6 +14950,10 @@ video {
   padding: 100vh;
 }
 
+.p-most {
+  padding: 72vh;
+}
+
 .p-half {
   padding: 50vh;
 }
@@ -15312,6 +15316,16 @@ video {
 .px-full {
   padding-left: 100vh;
   padding-right: 100vh;
+}
+
+.py-most {
+  padding-top: 72vh;
+  padding-bottom: 72vh;
+}
+
+.px-most {
+  padding-left: 72vh;
+  padding-right: 72vh;
 }
 
 .py-half {
@@ -15898,6 +15912,22 @@ video {
 
 .pl-full {
   padding-left: 100vh;
+}
+
+.pt-most {
+  padding-top: 72vh;
+}
+
+.pr-most {
+  padding-right: 72vh;
+}
+
+.pb-most {
+  padding-bottom: 72vh;
+}
+
+.pl-most {
+  padding-left: 72vh;
 }
 
 .pt-half {
@@ -46203,6 +46233,10 @@ video {
     padding: 100vh;
   }
 
+  .sm\:p-most {
+    padding: 72vh;
+  }
+
   .sm\:p-half {
     padding: 50vh;
   }
@@ -46565,6 +46599,16 @@ video {
   .sm\:px-full {
     padding-left: 100vh;
     padding-right: 100vh;
+  }
+
+  .sm\:py-most {
+    padding-top: 72vh;
+    padding-bottom: 72vh;
+  }
+
+  .sm\:px-most {
+    padding-left: 72vh;
+    padding-right: 72vh;
   }
 
   .sm\:py-half {
@@ -47151,6 +47195,22 @@ video {
 
   .sm\:pl-full {
     padding-left: 100vh;
+  }
+
+  .sm\:pt-most {
+    padding-top: 72vh;
+  }
+
+  .sm\:pr-most {
+    padding-right: 72vh;
+  }
+
+  .sm\:pb-most {
+    padding-bottom: 72vh;
+  }
+
+  .sm\:pl-most {
+    padding-left: 72vh;
   }
 
   .sm\:pt-half {
@@ -77378,6 +77438,10 @@ video {
     padding: 100vh;
   }
 
+  .md\:p-most {
+    padding: 72vh;
+  }
+
   .md\:p-half {
     padding: 50vh;
   }
@@ -77740,6 +77804,16 @@ video {
   .md\:px-full {
     padding-left: 100vh;
     padding-right: 100vh;
+  }
+
+  .md\:py-most {
+    padding-top: 72vh;
+    padding-bottom: 72vh;
+  }
+
+  .md\:px-most {
+    padding-left: 72vh;
+    padding-right: 72vh;
   }
 
   .md\:py-half {
@@ -78326,6 +78400,22 @@ video {
 
   .md\:pl-full {
     padding-left: 100vh;
+  }
+
+  .md\:pt-most {
+    padding-top: 72vh;
+  }
+
+  .md\:pr-most {
+    padding-right: 72vh;
+  }
+
+  .md\:pb-most {
+    padding-bottom: 72vh;
+  }
+
+  .md\:pl-most {
+    padding-left: 72vh;
   }
 
   .md\:pt-half {
@@ -108553,6 +108643,10 @@ video {
     padding: 100vh;
   }
 
+  .lg\:p-most {
+    padding: 72vh;
+  }
+
   .lg\:p-half {
     padding: 50vh;
   }
@@ -108915,6 +109009,16 @@ video {
   .lg\:px-full {
     padding-left: 100vh;
     padding-right: 100vh;
+  }
+
+  .lg\:py-most {
+    padding-top: 72vh;
+    padding-bottom: 72vh;
+  }
+
+  .lg\:px-most {
+    padding-left: 72vh;
+    padding-right: 72vh;
   }
 
   .lg\:py-half {
@@ -109501,6 +109605,22 @@ video {
 
   .lg\:pl-full {
     padding-left: 100vh;
+  }
+
+  .lg\:pt-most {
+    padding-top: 72vh;
+  }
+
+  .lg\:pr-most {
+    padding-right: 72vh;
+  }
+
+  .lg\:pb-most {
+    padding-bottom: 72vh;
+  }
+
+  .lg\:pl-most {
+    padding-left: 72vh;
   }
 
   .lg\:pt-half {
@@ -139728,6 +139848,10 @@ video {
     padding: 100vh;
   }
 
+  .xl\:p-most {
+    padding: 72vh;
+  }
+
   .xl\:p-half {
     padding: 50vh;
   }
@@ -140090,6 +140214,16 @@ video {
   .xl\:px-full {
     padding-left: 100vh;
     padding-right: 100vh;
+  }
+
+  .xl\:py-most {
+    padding-top: 72vh;
+    padding-bottom: 72vh;
+  }
+
+  .xl\:px-most {
+    padding-left: 72vh;
+    padding-right: 72vh;
   }
 
   .xl\:py-half {
@@ -140676,6 +140810,22 @@ video {
 
   .xl\:pl-full {
     padding-left: 100vh;
+  }
+
+  .xl\:pt-most {
+    padding-top: 72vh;
+  }
+
+  .xl\:pr-most {
+    padding-right: 72vh;
+  }
+
+  .xl\:pb-most {
+    padding-bottom: 72vh;
+  }
+
+  .xl\:pl-most {
+    padding-left: 72vh;
   }
 
   .xl\:pt-half {
@@ -170903,6 +171053,10 @@ video {
     padding: 100vh;
   }
 
+  .\32xl\:p-most {
+    padding: 72vh;
+  }
+
   .\32xl\:p-half {
     padding: 50vh;
   }
@@ -171265,6 +171419,16 @@ video {
   .\32xl\:px-full {
     padding-left: 100vh;
     padding-right: 100vh;
+  }
+
+  .\32xl\:py-most {
+    padding-top: 72vh;
+    padding-bottom: 72vh;
+  }
+
+  .\32xl\:px-most {
+    padding-left: 72vh;
+    padding-right: 72vh;
   }
 
   .\32xl\:py-half {
@@ -171851,6 +172015,22 @@ video {
 
   .\32xl\:pl-full {
     padding-left: 100vh;
+  }
+
+  .\32xl\:pt-most {
+    padding-top: 72vh;
+  }
+
+  .\32xl\:pr-most {
+    padding-right: 72vh;
+  }
+
+  .\32xl\:pb-most {
+    padding-bottom: 72vh;
+  }
+
+  .\32xl\:pl-most {
+    padding-left: 72vh;
   }
 
   .\32xl\:pt-half {

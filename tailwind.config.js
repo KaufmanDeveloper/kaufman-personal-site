@@ -16,6 +16,7 @@ module.exports = {
       },
       padding: {
         full: "100vh",
+        most: "72vh",
         half: "50vh",
       },
       minHeight: { 90: "90vh" },
