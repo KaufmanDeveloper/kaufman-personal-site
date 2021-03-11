@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 import Header from "./Header";
 import Footer from "./footer";
@@ -7,7 +8,7 @@ export const siteTitle = "Michael Kaufman's Blog";
 
 export default function Layout({ children }) {
   return (
-    <div className="m-2 mb-24">
+    <div className="mb-24">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -24,7 +25,18 @@ export default function Layout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      <Header />
+      <div className="m-2">
+        <Header />
+      </div>
+
+      <Image
+        className="-z-10"
+        src="/images/at-desk.jpeg"
+        alt="Michael Kaufman"
+        layout="responsive"
+        width={700}
+        height={475}
+      />
 
       <main className="mx-5">{children}</main>
 

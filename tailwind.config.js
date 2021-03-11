@@ -11,6 +11,9 @@ module.exports = {
       translate: {
         center: "-50%, -50%",
       },
+      zIndex: {
+        "-10": "-10",
+      },
     },
   },
   variants: {

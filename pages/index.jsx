@@ -32,6 +32,7 @@ export default function Home({ allPostsData }) {
         <title>Michael Kaufman's Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <Section>
         <SectionHeader>Nice to meet you!</SectionHeader>
 
