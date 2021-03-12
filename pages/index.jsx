@@ -77,7 +77,7 @@ export default function Home({ allPostsData }) {
       </div>
 
       <Section className={`${sectionalMargin} w-full`}>
-        <SectionContent className="w-1/2 ml-12 text-secondary text-center m-auto ml-auto">
+        <SectionContent className="w-full md:w-1/2 ml-12 text-secondary text-center m-auto ml-auto">
           I believe in the principal of{" "}
           <ContentLink href="https://en.wikipedia.org/wiki/Kaizen">
             Kaizen
