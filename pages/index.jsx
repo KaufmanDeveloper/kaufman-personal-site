@@ -33,10 +33,10 @@ export default function Home({ allPostsData }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Section>
+      <Section className="flex flex-col items-center justify-center mt-10">
         <SectionHeader>Nice to meet you!</SectionHeader>
 
-        <SectionContent>
+        <SectionContent className="w-11/12 md:w-1/2 text-center text-secondary mt-10">
           My name is Michael Kaufman. I’m a web developer based out of
           Nashville, TN and I have a passion for making awesome things!
         </SectionContent>
