@@ -23,11 +23,10 @@ export default function AboutMe() {
           </SectionContent>
 
           <SectionContent className="mt-4">
-            I'm a front end web developer with full stack web development
-            experience. Using React and Tailwind CSS I've built a UI library as
-            well an application that consumes the library. I've helped maintain
-            and develop enterprise applications including email services. I've
-            also built custom tools and draw modes for maps using Mapbox.
+            Using React and Tailwind CSS I've built a UI library as well an
+            application that consumes the library. I've helped maintain and
+            develop enterprise applications including email services. I've also
+            gained experience using Mapbox.
           </SectionContent>
         </Section>
 
