@@ -11,6 +11,16 @@ module.exports = {
       translate: {
         center: "-50%, -50%",
       },
+      zIndex: {
+        "-10": "-10",
+      },
+      padding: {
+        full: "100vh",
+        most: "72vh",
+        half: "50vh",
+      },
+      minHeight: { 90: "90vh" },
+      lineHeight: { 12: "3rem" },
     },
   },
   variants: {

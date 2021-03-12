@@ -8,6 +8,8 @@ import {
 import List from "../../components/List";
 
 export default function AboutMe() {
+  const sectionalMarginBottom = "mb-6 lg:mb-10";
+
   return (
     <Layout>
       <div className="w-full lg:w-9/12">
@@ -87,7 +89,7 @@ export default function AboutMe() {
 
         <SectionSubHeader>Education</SectionSubHeader>
 
-        <SectionContent className="mt-4">
+        <SectionContent className={`mt-4 ${sectionalMarginBottom}`}>
           I graduated with a Computer Science degree from Maryville College in
           2016.
         </SectionContent>

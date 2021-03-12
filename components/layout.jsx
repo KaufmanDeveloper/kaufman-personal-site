@@ -1,36 +1,71 @@
 import Head from "next/head";
+import Image from "next/image";
+
+import { withRouter } from "next/router";
 
 import Header from "./Header";
 import Footer from "./footer";
 
+import layoutStyles from "./layout.module.css";
+
 export const siteTitle = "Michael Kaufman's Blog";
 
-export default function Layout({ children }) {
+function Layout({ router, children }) {
   return (
-    <div className="m-2 mb-24">
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="Michael Kaufman's personal blog"
-          content="Read posts and learnings by Michael Kaufman"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
+    <div>
+      <div className="min-h-90">
+        <Head>
+          <link rel="icon" href="/favicon.ico" />
+          <meta
+            name="Michael Kaufman's personal blog"
+            content="Read posts and learnings by Michael Kaufman"
+          />
+          <meta
+            property="og:image"
+            content={`https://og-image.vercel.app/${encodeURI(
+              siteTitle
+            )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          />
+          <meta name="og:title" content={siteTitle} />
+          <meta name="twitter:card" content="summary_large_image" />
+        </Head>
 
-      <Header />
+        {router.pathname === "/" ? (
+          <div className="relative pt-half md:pt-most overflow-hidden flex justify-center">
+            <Header isHomeVersion />
 
-      <main className="mx-5">{children}</main>
+            <div
+              className={`absolute z-50 py-4 top-1/2 md:top-80 text-center left-0 right-0 leading-10 ${layoutStyles.layout} flex justify-center`}
+            >
+              <div
+                className={`text-xl md:text-4xl leading-8 md:leading-12 text-white mx-10 w-10/12 md:w-8/12 text-center ${layoutStyles.text}`}
+                aria-multiline="true"
+              >
+                Michael Kaufman is a Web Developer based in Nashville, TN
+              </div>
+            </div>
 
-      <div className="ml-4">
+            <Image
+              className={layoutStyles.image}
+              src="/images/at-desk.jpeg"
+              alt="Michael Kaufman"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+        ) : (
+          <div className="m-2">
+            <Header />
+          </div>
+        )}
+
+        <main className="mx-5">{children}</main>
+      </div>
+      <div>
         <Footer />
       </div>
     </div>
   );
 }
+
+export default withRouter(Layout);
