@@ -35,10 +35,10 @@ function Layout({ router, children }) {
             <Header isHomeVersion />
 
             <div
-              className={`absolute z-50 py-4 top-32 md:top-72 text-center left-0 right-0 leading-10 ${layoutStyles.layout} flex justify-center`}
+              className={`absolute z-50 py-4 top-1/2 md:top-80 text-center left-0 right-0 leading-10 ${layoutStyles.layout} flex justify-center`}
             >
               <div
-                className={`text-xl text-white md:text-4xl mx-10 w-10/12 md:w-8/12 text-center ${layoutStyles.text}`}
+                className={`text-xl md:text-4xl leading-8 md:leading-12 text-white mx-10 w-10/12 md:w-8/12 text-center ${layoutStyles.text}`}
                 aria-multiline="true"
               >
                 Michael Kaufman is a Web Developer based in Nashville, TN

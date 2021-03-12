@@ -20,6 +20,7 @@ module.exports = {
         half: "50vh",
       },
       minHeight: { 90: "90vh" },
+      lineHeight: { 12: "3rem" },
     },
   },
   variants: {
