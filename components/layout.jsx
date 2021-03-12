@@ -35,15 +35,18 @@ function Layout({ router, children }) {
             <Header isHomeVersion />
 
             <div
-              className={`absolute text-white z-50 py-4 top-32 md:top-64 text-center left-0 right-0 leading-10 ${layoutStyles.layout} bg-black bg-opacity-30 flex justify-center`}
+              className={`absolute z-50 py-4 top-32 md:top-72 text-center left-0 right-0 leading-10 ${layoutStyles.layout} flex justify-center`}
             >
-              <div className="text-xl md:text-4xl mx-10 w-10/12 md:w-8/12 text-center">
+              <div
+                className={`text-xl text-white md:text-4xl mx-10 w-10/12 md:w-8/12 text-center ${layoutStyles.text}`}
+                aria-multiline="true"
+              >
                 Michael Kaufman is a Web Developer based in Nashville, TN
               </div>
             </div>
 
             <Image
-              className=""
+              className={layoutStyles.image}
               src="/images/at-desk.jpeg"
               alt="Michael Kaufman"
               layout="fill"
