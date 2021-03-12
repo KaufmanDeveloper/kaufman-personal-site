@@ -25,6 +25,8 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   const isMobileView = useMediaQuery(screenSizes.md);
+  const sectionalMargin = "mt-10 lg:mt-20";
+  const sectionalMarginBottom = "mb-6 lg:mb-10";
 
   return (
     <Layout home>
@@ -33,7 +35,9 @@ export default function Home({ allPostsData }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Section className="flex flex-col items-center justify-center mt-10">
+      <Section
+        className={`flex flex-col items-center justify-center ${sectionalMargin} w-full`}
+      >
         <SectionHeader>Nice to meet you!</SectionHeader>
 
         <SectionContent className="w-11/12 md:w-1/2 text-center text-secondary mt-10">
@@ -45,12 +49,12 @@ export default function Home({ allPostsData }) {
       <div
         className={`${
           !isMobileView ? "flex items-center" : ""
-        } w-full bg-accented rounded mt-8 lg:mt-16`}
+        } w-full rounded ${sectionalMargin}`}
       >
         <SectionContent
           className={`${
             !isMobileView ? "w-1/2 px-12 mt-0" : "px-6 pt-4"
-          } text-white`}
+          } text-center text-secondary`}
         >
           I love to work and learn with teams that love creating shippable
           products. I've worked with a government team maintaining legacy
@@ -72,8 +76,8 @@ export default function Home({ allPostsData }) {
         </SectionContent>
       </div>
 
-      <Section>
-        <SectionContent>
+      <Section className={`${sectionalMargin} w-full`}>
+        <SectionContent className="w-1/2 ml-12 text-secondary text-center m-auto ml-auto">
           I believe in the principal of{" "}
           <ContentLink href="https://en.wikipedia.org/wiki/Kaizen">
             Kaizen
@@ -95,7 +99,7 @@ export default function Home({ allPostsData }) {
       <div
         className={`${
           !isMobileView ? "flex items-center" : ""
-        } w-full mt-12 lg:mt-16`}
+        } w-full ${sectionalMargin}`}
       >
         <Image
           className="rounded"
@@ -106,7 +110,9 @@ export default function Home({ allPostsData }) {
         />
 
         <SectionContent
-          className={`${!isMobileView ? "w-1/2 pl-16" : "px-6 pb-4"} my-6`}
+          className={`${
+            !isMobileView ? "w-1/2 pl-16" : "px-6 pb-4"
+          } my-6 text-center text-secondary`}
         >
           ABC, or "Always Be Coding" is a practice I try to subscribe to. To
           keep up with my coding skills in my free time, I work on building
@@ -115,7 +121,9 @@ export default function Home({ allPostsData }) {
         </SectionContent>
       </div>
 
-      <Journal allPostsData={allPostsData} />
+      <div className={`${sectionalMargin} ${sectionalMarginBottom}`}>
+        <Journal allPostsData={allPostsData} />
+      </div>
     </Layout>
   );
 }

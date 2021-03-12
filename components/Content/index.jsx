@@ -2,11 +2,14 @@ function Section({ children, className }) {
   const containsMarginStylingRegex = new RegExp("mt*");
   const containsMarginStyling = containsMarginStylingRegex.test(className);
 
+  const containsWidthStylingRegex = new RegExp("w-*");
+  const containsWidthStyling = containsWidthStylingRegex.test(className);
+
   return (
     <section
-      className={`${containsMarginStyling ? "" : "mt-12"} w-full lg:w-11/12${
-        className ? " " + className : ""
-      }`}
+      className={`${containsMarginStyling ? "" : "mt-12"} ${
+        containsWidthStyling ? "" : "w-full lg:w-11/12"
+      }${className ? " " + className : ""}`}
     >
       {children}
     </section>
