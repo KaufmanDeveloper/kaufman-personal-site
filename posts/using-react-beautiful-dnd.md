@@ -1,6 +1,6 @@
 ---
 title: "Using React Beautiful Drag n Drop"
-date: "2020-02-27"
+date: "2021-02-27"
 ---
 
 [React Beautiful Drag n Drop](https://github.com/atlassian/react-beautiful-dnd) is a fantastic tool for implementing Kanban tools in your application. It supports cross column drag and drop, though it doesn't support x and y coordinate drag and drop like a library like [react-draggable](https://github.com/STRML/react-draggable).
