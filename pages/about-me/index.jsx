@@ -19,7 +19,7 @@ export default function AboutMe() {
           <SectionContent>
             I'm a front end web developer with full stack web development
             experience. I love learning and working with teams that have a
-            passion for building long lasting solutions.
+            passion for building long lasting solutions. test.
           </SectionContent>
 
           <SectionContent className="mt-4">
