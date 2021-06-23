@@ -6,8 +6,6 @@ import { withRouter } from "next/router";
 import Header from "./Header";
 import Footer from "./footer";
 
-import layoutStyles from "./layout.module.css";
-
 export const siteTitle = "Michael Kaufman's Blog";
 
 function Layout({ router, children }) {
@@ -54,10 +52,10 @@ function Layout({ router, children }) {
             <Header isHomeVersion />
 
             <div
-              className={`absolute z-50 py-4 top-1/2 md:top-80 text-center left-0 right-0 leading-10 ${layoutStyles.layout} flex justify-center`}
+              className={`absolute z-50 py-4 top-1/2 md:top-80 text-center left-0 right-0 leading-10 flex justify-center`}
             >
               <div
-                className={`text-xl md:text-4xl leading-8 md:leading-12 text-white mx-10 w-10/12 md:w-8/12 text-center ${layoutStyles.text}`}
+                className={`text-xl md:text-4xl leading-8 md:leading-12 text-white mx-10 w-10/12 md:w-8/12 text-center`}
                 aria-multiline="true"
               >
                 Michael Kaufman is a Web Developer based in Nashville, TN
@@ -65,7 +63,6 @@ function Layout({ router, children }) {
             </div>
 
             <Image
-              className={layoutStyles.image}
               src="/images/at-desk.jpeg"
               alt="Michael Kaufman"
               layout="fill"
