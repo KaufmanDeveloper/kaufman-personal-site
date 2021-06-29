@@ -1,5 +1,5 @@
 {
-  "extends": ["next"],
+  "extends": ["next", "airbnb"],
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": ["error"],

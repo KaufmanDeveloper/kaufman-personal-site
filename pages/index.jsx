@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 import FormatQuote from "@material-ui/icons/FormatQuote";
+import ScrollAnimation from "react-animate-on-scroll";
 
 import Layout from "../components/layout";
 import Journal from "../components/Journal";
@@ -46,35 +47,37 @@ export default function Home({ allPostsData }) {
         </SectionContent>
       </Section>
 
-      <div
-        className={`${
-          !isMobileView ? "flex items-center" : ""
-        } w-full rounded ${sectionalMargin}`}
-      >
-        <SectionContent
+      <ScrollAnimation animateIn="animate__fadeIn">
+        <div
           className={`${
-            !isMobileView ? "w-1/2 px-12 mt-0" : "px-6 pt-4"
-          } text-center text-secondary`}
+            !isMobileView ? "flex items-center" : ""
+          } w-full rounded ${sectionalMargin}`}
         >
-          I love to work and learn with teams that love creating shippable
-          products. I've worked with a government team maintaining legacy
-          software as well as an agricultural software development team using
-          the latest front end development practices to rapidly develop and
-          prototype.
-        </SectionContent>
+          <SectionContent
+            className={`${
+              !isMobileView ? "w-1/2 px-12 mt-0" : "px-6 pt-4"
+            } text-center text-secondary`}
+          >
+            I love to work and learn with teams that love creating shippable
+            products. I've worked with a government team maintaining legacy
+            software as well as an agricultural software development team using
+            the latest front end development practices to rapidly develop and
+            prototype.
+          </SectionContent>
 
-        <SectionContent
-          className={`${!isMobileView ? "w-1/2 px-10" : "px-6 pb-4"} my-6`}
-        >
-          <Image
-            className="rounded"
-            src="/images/email-template.png"
-            width={isMobileView ? 600 : 1200}
-            height={isMobileView ? 300 : 600}
-            alt="Michael Kaufman"
-          />
-        </SectionContent>
-      </div>
+          <SectionContent
+            className={`${!isMobileView ? "w-1/2 px-10" : "px-6 pb-4"} my-6`}
+          >
+            <Image
+              className="rounded"
+              src="/images/email-template.png"
+              width={isMobileView ? 600 : 1200}
+              height={isMobileView ? 300 : 600}
+              alt="Michael Kaufman"
+            />
+          </SectionContent>
+        </div>
+      </ScrollAnimation>
 
       <Section className={`${sectionalMargin} w-full`}>
         <SectionContent className="w-full md:w-1/2 ml-12 text-secondary text-center m-auto ml-auto">
