@@ -79,50 +79,55 @@ export default function Home({ allPostsData }) {
         </div>
       </ScrollAnimation>
 
-      <Section className={`${sectionalMargin} w-full`}>
-        <SectionContent className="w-full md:w-1/2 ml-12 text-secondary text-center m-auto ml-auto">
-          I believe in the principal of{" "}
-          <ContentLink href="https://en.wikipedia.org/wiki/Kaizen">
-            Kaizen
-          </ContentLink>
-          , or incremental development. Incremental improvement every day no
-          matter how small makes a big difference in your skill over time.
-        </SectionContent>
-      </Section>
-      <div className="flex justify-center my-4">
-        <FormatQuote
-          className="text-gray-500 mt-2 lg:mt-12 mx-1"
-          style={{ fontSize: 18 }}
-        />
-        <div className="text-center text-gray-500 text-xl lg:text-2xl mt-2 lg:mt-12">
-          Little by little, one travels far.
+      <ScrollAnimation animateIn="animate__fadeIn">
+        <Section className={`${sectionalMargin} w-full`}>
+          <SectionContent className="w-full md:w-1/2 ml-12 text-secondary text-center m-auto ml-auto">
+            I believe in the principal of{" "}
+            <ContentLink href="https://en.wikipedia.org/wiki/Kaizen">
+              Kaizen
+            </ContentLink>
+            , or incremental development. Incremental improvement every day no
+            matter how small makes a big difference in your skill over time.
+          </SectionContent>
+        </Section>
+
+        <div className="flex justify-center my-4">
+          <FormatQuote
+            className="text-gray-500 mt-2 lg:mt-12 mx-1"
+            style={{ fontSize: 18 }}
+          />
+          <div className="text-center text-gray-500 text-xl lg:text-2xl mt-2 lg:mt-12">
+            Little by little, one travels far.
+          </div>
         </div>
-      </div>
+      </ScrollAnimation>
 
-      <div
-        className={`${
-          !isMobileView ? "flex items-center" : ""
-        } w-full ${sectionalMargin}`}
-      >
-        <Image
-          className="rounded"
-          src="/images/labyrinth-video-2.gif"
-          width={600}
-          height={300}
-          alt="Michael Kaufman"
-        />
-
-        <SectionContent
+      <ScrollAnimation animateIn="animate__fadeIn">
+        <div
           className={`${
-            !isMobileView ? "w-1/2 pl-16" : "px-6 pb-4"
-          } my-6 text-center text-secondary`}
+            !isMobileView ? "flex items-center" : ""
+          } w-full ${sectionalMargin}`}
         >
-          ABC, or "Always Be Coding" is a practice I try to subscribe to. To
-          keep up with my coding skills in my free time, I work on building
-          video games from the ground up using the Godot game engine, which uses
-          a language similar to Python.
-        </SectionContent>
-      </div>
+          <Image
+            className="rounded"
+            src="/images/labyrinth-video-2.gif"
+            width={600}
+            height={300}
+            alt="Michael Kaufman"
+          />
+
+          <SectionContent
+            className={`${
+              !isMobileView ? "w-1/2 pl-16" : "px-6 pb-4"
+            } my-6 text-center text-secondary`}
+          >
+            ABC, or "Always Be Coding" is a practice I try to subscribe to. To
+            keep up with my coding skills in my free time, I work on building
+            video games from the ground up using the Godot game engine, which
+            uses a language similar to Python.
+          </SectionContent>
+        </div>
+      </ScrollAnimation>
 
       <div className={`${sectionalMargin} ${sectionalMarginBottom}`}>
         <Journal allPostsData={allPostsData} />
