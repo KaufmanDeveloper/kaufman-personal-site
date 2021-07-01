@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 import FormatQuote from "@material-ui/icons/FormatQuote";
+import ScrollAnimation from "react-animate-on-scroll";
 
 import Layout from "../components/layout";
 import Journal from "../components/Journal";
@@ -46,80 +47,87 @@ export default function Home({ allPostsData }) {
         </SectionContent>
       </Section>
 
-      <div
-        className={`${
-          !isMobileView ? "flex items-center" : ""
-        } w-full rounded ${sectionalMargin}`}
-      >
-        <SectionContent
+      <ScrollAnimation animateIn="animate__fadeIn">
+        <div
           className={`${
-            !isMobileView ? "w-1/2 px-12 mt-0" : "px-6 pt-4"
-          } text-center text-secondary`}
+            !isMobileView ? "flex items-center" : ""
+          } w-full rounded ${sectionalMargin}`}
         >
-          I love to work and learn with teams that love creating shippable
-          products. I've worked with a government team maintaining legacy
-          software as well as an agricultural software development team using
-          the latest front end development practices to rapidly develop and
-          prototype.
-        </SectionContent>
+          <SectionContent
+            className={`${
+              !isMobileView ? "w-1/2 px-12 mt-0" : "px-6 pt-4"
+            } text-center text-secondary`}
+          >
+            I love to work and learn with teams that love creating shippable
+            products. I've worked with a government team maintaining legacy
+            software as well as an agricultural software development team using
+            the latest front end development practices to rapidly develop and
+            prototype.
+          </SectionContent>
 
-        <SectionContent
-          className={`${!isMobileView ? "w-1/2 px-10" : "px-6 pb-4"} my-6`}
+          <SectionContent
+            className={`${!isMobileView ? "w-1/2 px-10" : "px-6 pb-4"} my-6`}
+          >
+            <Image
+              className="rounded"
+              src="/images/email-template.png"
+              width={isMobileView ? 600 : 1200}
+              height={isMobileView ? 300 : 600}
+              alt="Michael Kaufman"
+            />
+          </SectionContent>
+        </div>
+      </ScrollAnimation>
+
+      <ScrollAnimation animateIn="animate__fadeIn">
+        <Section className={`${sectionalMargin} w-full`}>
+          <SectionContent className="w-full md:w-1/2 ml-12 text-secondary text-center m-auto ml-auto">
+            I believe in the principal of{" "}
+            <ContentLink href="https://en.wikipedia.org/wiki/Kaizen">
+              Kaizen
+            </ContentLink>
+            , or incremental development. Incremental improvement every day no
+            matter how small makes a big difference in your skill over time.
+          </SectionContent>
+        </Section>
+
+        <div className="flex justify-center my-4">
+          <FormatQuote
+            className="text-gray-500 mt-2 lg:mt-12 mx-1"
+            style={{ fontSize: 18 }}
+          />
+          <div className="text-center text-gray-500 text-xl lg:text-2xl mt-2 lg:mt-12">
+            Little by little, one travels far.
+          </div>
+        </div>
+      </ScrollAnimation>
+
+      <ScrollAnimation animateIn="animate__fadeIn">
+        <div
+          className={`${
+            !isMobileView ? "flex items-center" : ""
+          } w-full ${sectionalMargin}`}
         >
           <Image
             className="rounded"
-            src="/images/email-template.png"
-            width={isMobileView ? 600 : 1200}
-            height={isMobileView ? 300 : 600}
+            src="/images/labyrinth-video-2.gif"
+            width={600}
+            height={300}
             alt="Michael Kaufman"
           />
-        </SectionContent>
-      </div>
 
-      <Section className={`${sectionalMargin} w-full`}>
-        <SectionContent className="w-full md:w-1/2 ml-12 text-secondary text-center m-auto ml-auto">
-          I believe in the principal of{" "}
-          <ContentLink href="https://en.wikipedia.org/wiki/Kaizen">
-            Kaizen
-          </ContentLink>
-          , or incremental development. Incremental improvement every day no
-          matter how small makes a big difference in your skill over time.
-        </SectionContent>
-      </Section>
-      <div className="flex justify-center my-4">
-        <FormatQuote
-          className="text-gray-500 mt-2 lg:mt-12 mx-1"
-          style={{ fontSize: 18 }}
-        />
-        <div className="text-center text-gray-500 text-xl lg:text-2xl mt-2 lg:mt-12">
-          Little by little, one travels far.
+          <SectionContent
+            className={`${
+              !isMobileView ? "w-1/2 pl-16" : "px-6 pb-4"
+            } my-6 text-center text-secondary`}
+          >
+            ABC, or "Always Be Coding" is a practice I try to subscribe to. To
+            keep up with my coding skills in my free time, I work on building
+            video games from the ground up using the Godot game engine, which
+            uses a language similar to Python.
+          </SectionContent>
         </div>
-      </div>
-
-      <div
-        className={`${
-          !isMobileView ? "flex items-center" : ""
-        } w-full ${sectionalMargin}`}
-      >
-        <Image
-          className="rounded"
-          src="/images/labyrinth-video-2.gif"
-          width={600}
-          height={300}
-          alt="Michael Kaufman"
-        />
-
-        <SectionContent
-          className={`${
-            !isMobileView ? "w-1/2 pl-16" : "px-6 pb-4"
-          } my-6 text-center text-secondary`}
-        >
-          ABC, or "Always Be Coding" is a practice I try to subscribe to. To
-          keep up with my coding skills in my free time, I work on building
-          video games from the ground up using the Godot game engine, which uses
-          a language similar to Python.
-        </SectionContent>
-      </div>
+      </ScrollAnimation>
 
       <div className={`${sectionalMargin} ${sectionalMarginBottom}`}>
         <Journal allPostsData={allPostsData} />
