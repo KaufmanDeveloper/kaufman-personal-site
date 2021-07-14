@@ -1,6 +1,5 @@
-import "../styles/tailwind.css";
-import "animate.css/animate.min.css";
+import '../styles/tailwind.css'
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return <Component {...pageProps} />
 }
