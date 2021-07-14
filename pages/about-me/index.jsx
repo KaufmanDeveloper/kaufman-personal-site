@@ -17,16 +17,8 @@ export default function AboutMe() {
           <SectionHeader>About Me</SectionHeader>
 
           <SectionContent>
-            I'm a front end web developer with full stack web development
-            experience. I love learning and working with teams that have a
-            passion for building long lasting solutions.
-          </SectionContent>
-
-          <SectionContent className="mt-4">
-            Using React and Tailwind CSS I've built a UI library as well an
-            application that consumes the library. I've helped maintain and
-            develop enterprise applications including email services. I've also
-            gained experience using Mapbox.
+            I'm a full stack web developer that loves learning and working with
+            teams that have a passion for building long lasting solutions.
           </SectionContent>
         </Section>
 
@@ -34,10 +26,26 @@ export default function AboutMe() {
           <SectionSubHeader>Experience</SectionSubHeader>
 
           <SectionContent className="mt-6">
+            <h3 className="text-lg text-primary">Senior Software Engineer</h3>
+
+            <div className="mt-3 italic text-secondary text-sm">
+              Xpresspark, Charleston, SC - Remote / June 2021 - Present
+            </div>
+
+            <List className="mt-3">
+              <List.Item>Used Nest to implement backend services</List.Item>
+              <List.Item>Implemented Slack integrated service</List.Item>
+              <List.Item>
+                Used CQRS practices for Domain Driven Development
+              </List.Item>
+            </List>
+          </SectionContent>
+
+          <SectionContent className="mt-6">
             <h3 className="text-lg text-primary">Software Engineer</h3>
 
             <div className="mt-3 italic text-secondary text-sm">
-              Syngenta Digital, Murray, KY - Remote / June 2019 - Present
+              Syngenta Digital, Murray, KY - Remote / June 2019 - June 2021
             </div>
 
             <List className="mt-3">
@@ -78,7 +86,7 @@ export default function AboutMe() {
         <List className="mt-3">
           <List.Item>React</List.Item>
           <List.Item>Tailwind CSS</List.Item>
-          <List.Item>Mapbox</List.Item>
+          <List.Item>Nest</List.Item>
           <List.Item>Ember</List.Item>
           <List.Item>Figma</List.Item>
           <List.Item>Express</List.Item>

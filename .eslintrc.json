@@ -1,6 +1,6 @@
 {
   "extends": ["next"],
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "only-warn"],
   "rules": {
     "prettier/prettier": ["error"],
     "react/no-unescaped-entities": 0

@@ -12,7 +12,7 @@ export default function Journal({ allPostsData }) {
         <ul className="mt-8">
           {allPostsData.map(({ id, date, title }) => (
             <li className="my-4" key={id}>
-              <div className="text-blue-500 hover:text-blue-400">
+              <div className="text-blue-500 hover:text-blue-400 inline-block">
                 <Link href={`/posts/${id}`}>
                   <a>{title}</a>
                 </Link>
