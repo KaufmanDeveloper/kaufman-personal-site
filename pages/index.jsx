@@ -28,6 +28,8 @@ export default function Home({ allPostsData }) {
   const sectionalMargin = 'mt-10 lg:mt-20'
   const sectionalMarginBottom = 'mb-6 lg:mb-10'
 
+  const recentPosts = allPostsData.slice(0, 3)
+
   return (
     <Layout home>
       <Head>
@@ -123,7 +125,7 @@ export default function Home({ allPostsData }) {
       </div>
 
       <div className={`${sectionalMargin} ${sectionalMarginBottom}`}>
-        <Journal allPostsData={allPostsData} />
+        <Journal pageTitle="Recent Posts" allPostsData={recentPosts} />
       </div>
     </Layout>
   )

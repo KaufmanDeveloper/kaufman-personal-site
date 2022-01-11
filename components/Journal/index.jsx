@@ -1,12 +1,16 @@
-import Link from "next/link";
-import Date from "../date";
+import Link from 'next/link'
+import Date from '../date'
 
-import { Section, SectionContent, SectionHeader } from "../Content";
+import { Section, SectionContent, SectionHeader } from '../Content'
 
-export default function Journal({ allPostsData }) {
+export default function Journal({ allPostsData, pageTitle }) {
+  const sectionHeader = pageTitle ? pageTitle : 'Journal'
+
   return (
     <Section className="mt-12 max-w-xl">
-      <SectionHeader className="text-4xl text-primary">Journal</SectionHeader>
+      <SectionHeader className="text-4xl text-primary">
+        {sectionHeader}
+      </SectionHeader>
 
       <SectionContent className="mt-4 lg:mt-6">
         <ul className="mt-8">
@@ -25,5 +29,5 @@ export default function Journal({ allPostsData }) {
         </ul>
       </SectionContent>
     </Section>
-  );
+  )
 }
