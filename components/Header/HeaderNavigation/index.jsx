@@ -1,17 +1,15 @@
-import { withRouter } from "next/router";
-import Link from "next/link";
+import { withRouter } from 'next/router'
+import Link from 'next/link'
 
 function HeaderNavigation({ router, isHomeVersion }) {
   const linkStyling = isHomeVersion
-    ? "text-white hover:text-gray-200"
-    : "text-gray-400 hover:text-gray-500";
-  const isCurrentRouteStyling = isHomeVersion
-    ? "text-gray-300"
-    : "text-primary";
+    ? 'text-white hover:text-gray-200'
+    : 'text-gray-400 hover:text-gray-500'
+  const isCurrentRouteStyling = isHomeVersion ? 'text-gray-300' : 'text-primary'
 
   return (
-    <div className="flex mr-3 w-52 xl:w-56 justify-between">
-      {router.pathname === "/" ? (
+    <div className="flex mr-3 w-64 justify-between">
+      {router.pathname === '/' ? (
         <span className={isCurrentRouteStyling}>Home</span>
       ) : (
         <Link href="/">
@@ -19,7 +17,7 @@ function HeaderNavigation({ router, isHomeVersion }) {
         </Link>
       )}
 
-      {router.pathname === "/about-me" ? (
+      {router.pathname === '/about-me' ? (
         <span className={isCurrentRouteStyling}>About Me</span>
       ) : (
         <Link href="/about-me">
@@ -27,15 +25,23 @@ function HeaderNavigation({ router, isHomeVersion }) {
         </Link>
       )}
 
-      {router.pathname === "/journal" ? (
+      {router.pathname === '/journal' ? (
         <span className={isCurrentRouteStyling}>Journal</span>
       ) : (
         <Link href="/journal">
           <a className={linkStyling}>Journal</a>
         </Link>
       )}
+
+      {router.pathname === '/cooking' ? (
+        <span className={isCurrentRouteStyling}>Cooking</span>
+      ) : (
+        <Link href="/cooking">
+          <a className={linkStyling}>Cooking</a>
+        </Link>
+      )}
     </div>
-  );
+  )
 }
 
-export default withRouter(HeaderNavigation);
+export default withRouter(HeaderNavigation)
