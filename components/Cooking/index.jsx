@@ -17,7 +17,7 @@ export default function Cooking({ allPostsData, pageTitle }) {
           {allPostsData.map(({ id, date, title }) => (
             <li className="my-4" key={id}>
               <div className="text-blue-500 hover:text-blue-400 inline-block">
-                <Link href={`/cooking/${id}`}>
+                <Link href={`/cooking-posts/${id}`}>
                   <a>{title}</a>
                 </Link>
               </div>
