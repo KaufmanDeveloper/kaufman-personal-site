@@ -1,12 +1,15 @@
-import Head from "next/head";
-import Image from "next/image";
+import Head from 'next/head'
+import Image from 'next/image'
 
-import { withRouter } from "next/router";
+import { withRouter } from 'next/router'
 
-import Header from "./Header";
-import Footer from "./footer";
+import { screenSizes } from '../helpers/constants'
+import useMediaQuery from '../helpers/useMediaQuery'
 
-export const siteTitle = "Michael Kaufman's Blog";
+import Header from './Header'
+import Footer from './footer'
+
+export const siteTitle = "Michael Kaufman's Blog"
 
 function Layout({ router, children }) {
   const shimmer = (w, h) => `
@@ -21,12 +24,14 @@ function Layout({ router, children }) {
     <rect width="${w}" height="${h}" fill="#333" />
     <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
     <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />
-  </svg>`;
+  </svg>`
 
   const toBase64 = (str) =>
-    typeof window === "undefined"
-      ? Buffer.from(str).toString("base64")
-      : window.btoa(str);
+    typeof window === 'undefined'
+      ? Buffer.from(str).toString('base64')
+      : window.btoa(str)
+
+  const isMobileView = useMediaQuery(screenSizes.sm)
 
   return (
     <div>
@@ -47,7 +52,7 @@ function Layout({ router, children }) {
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
 
-        {router.pathname === "/" ? (
+        {router.pathname === '/' ? (
           <div className="relative pt-half md:pt-most overflow-hidden flex justify-center">
             <Header isHomeVersion />
 
@@ -63,7 +68,12 @@ function Layout({ router, children }) {
             </div>
 
             <Image
-              src="/images/at-desk.jpeg"
+              className="filter brightness-50"
+              src={
+                isMobileView
+                  ? '/images/profile_picture_smaller_screen.jpeg'
+                  : '/images/profile_picture_fullscreen.jpg'
+              }
               alt="Michael Kaufman"
               layout="fill"
               objectFit="cover"
@@ -85,7 +95,7 @@ function Layout({ router, children }) {
         <Footer />
       </div>
     </div>
-  );
+  )
 }
 
-export default withRouter(Layout);
+export default withRouter(Layout)
