@@ -10,7 +10,7 @@ import Date from '../../components/date'
 
 import { getAllPostIds, getPostData } from '../../lib/cooking-posts'
 
-import postStyles from './posts.module.css'
+import postStyles from '../../styles/posts.module.css'
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)

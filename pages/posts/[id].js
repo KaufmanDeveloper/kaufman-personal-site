@@ -1,31 +1,31 @@
-import Head from "next/head";
+import Head from 'next/head'
 
 import {
   Section,
   SectionContent,
   SectionHeader,
-} from "../../components/Content";
-import Layout from "../../components/layout";
-import Date from "../../components/date";
+} from '../../components/Content'
+import Layout from '../../components/layout'
+import Date from '../../components/date'
 
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import { getAllPostIds, getPostData } from '../../lib/posts'
 
-import postStyles from "./posts.module.css";
+import postStyles from '../../styles/posts.module.css'
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id);
+  const postData = await getPostData(params.id)
   return {
     props: {
       postData,
     },
-  };
+  }
 }
 export async function getStaticPaths() {
-  const paths = getAllPostIds();
+  const paths = getAllPostIds()
   return {
     paths,
     fallback: false,
-  };
+  }
 }
 
 export default function Post({ postData }) {
@@ -49,5 +49,5 @@ export default function Post({ postData }) {
         </Section>
       </article>
     </Layout>
-  );
+  )
 }
