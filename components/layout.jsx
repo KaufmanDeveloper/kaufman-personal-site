@@ -37,8 +37,10 @@ function Layout({ router, children }) {
           />
           <meta
             property="og:image"
-            content="https://kaufmandeveloper.com/images/profile_picture_smaller_screen.jpeg"
+            content="https://kaufmandeveloper.com/images/profile_picture_fullscreen.jpg"
           />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
         </Head>
 
         {router.pathname === '/' ? (
