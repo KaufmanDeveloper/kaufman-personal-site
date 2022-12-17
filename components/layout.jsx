@@ -12,21 +12,6 @@ import Footer from './footer'
 export const siteTitle = "Michael Kaufman's Blog"
 
 function Layout({ router, children }) {
-  // Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535
-  const keyStr =
-    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='
-
-  const triplet = (e1, e2, e3) =>
-    keyStr.charAt(e1 >> 2) +
-    keyStr.charAt(((e1 & 3) << 4) | (e2 >> 4)) +
-    keyStr.charAt(((e2 & 15) << 2) | (e3 >> 6)) +
-    keyStr.charAt(e3 & 63)
-
-  const rgbDataURL = (r, g, b) =>
-    `data:image/gif;base64,R0lGODlhAQABAPAA${
-      triplet(0, r, g) + triplet(b, 255, 255)
-    }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`
-
   const isMobileView = useMediaQuery(screenSizes.sm)
 
   return (
@@ -38,14 +23,22 @@ function Layout({ router, children }) {
             name="Michael Kaufman's personal blog"
             content="Read posts and learnings by Michael Kaufman"
           />
+          <meta property="og:url" content="https://kaufmandeveloper.com" />
+          <meta property="og:type" content="website" />
+          <meta property="fb:app_id" content="Kaufman Developer" />
+          <meta property="og:title" content="Michael Kaufman's personal blog" />
+          <meta
+            name="twitter:card"
+            content="Michael Kaufman's personal blog."
+          />
+          <meta
+            property="og:description"
+            content="Read posts and learnings by Michael Kaufman."
+          />
           <meta
             property="og:image"
-            content={`https://og-image.vercel.app/${encodeURI(
-              siteTitle
-            )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+            content="https://kaufmandeveloper.com/images/profile_picture_smaller_screen.jpeg"
           />
-          <meta name="og:title" content={siteTitle} />
-          <meta name="twitter:card" content="summary_large_image" />
         </Head>
 
         {router.pathname === '/' ? (
