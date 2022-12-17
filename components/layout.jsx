@@ -37,7 +37,7 @@ function Layout({ router, children }) {
           />
           <meta
             property="og:image"
-            content="https://kaufmandeveloper.com/images/profile_picture_fullscreen.jpg"
+            content="https://kaufmandeveloper.com/images/preview.png"
           />
         </Head>
 
