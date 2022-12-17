@@ -73,8 +73,7 @@ function Layout({ router, children }) {
               alt="Michael Kaufman"
               layout="fill"
               objectFit="cover"
-              placeholder="blur"
-              blurDataURL={rgbDataURL(53, 53, 53)}
+              priority={true}
             />
           </div>
         ) : (
