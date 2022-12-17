@@ -16,14 +16,22 @@ import { getSortedPostsData } from '../lib/posts'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
+  let photo = null
+  await fetch('https://jsonplaceholder.typicode.com/photos/1')
+    .then((response) => response.json())
+    .then((json) => {
+      photo = json
+    })
+
   return {
     props: {
       allPostsData,
+      photo,
     },
   }
 }
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData, photo }) {
   const isMobileView = useMediaQuery(screenSizes.md)
   const sectionalMargin = 'mt-10 lg:mt-20'
   const sectionalMarginBottom = 'mb-6 lg:mb-10'
@@ -35,6 +43,17 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>Michael Kaufman's Blog</title>
         <link rel="icon" href="/favicon.ico" />
+
+        <meta property="og:url" content="https://kaufmandeveloper.com" />
+        <meta property="og:type" content="website" />
+        <meta property="fb:app_id" content="your fb id" />
+        <meta property="og:title" content={photo?.title} />
+        <meta name="twitter:card" content="Michael Kaufman's personal blog." />
+        <meta
+          property="og:description"
+          content="Read posts and learnings by Michael Kaufman."
+        />
+        <meta property="og:image" content={photo?.url} />
       </Head>
 
       <Section
