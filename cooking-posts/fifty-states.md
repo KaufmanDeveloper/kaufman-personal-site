@@ -1,6 +1,6 @@
 ---
 title: 'Recipes Across the US'
-date: '2022-12-16'
+date: '2023-01-12'
 ---
 
 Before I started documenting my cooking adventures, I did a challenge where every week I made a different Disney recipe that was based on a Disney movie we were watching in alphabetical order. It was really fun and I learned a lot about cooking along the way. I also discovered some awesome new foods with it, including [Jollof Rice](https://en.wikipedia.org/wiki/Jollof_rice).
@@ -45,6 +45,18 @@ This is chocolate sauce. In Arkansas they like to eat it on biscuits. I don't kn
 
 ![California Burritos](/images/california_burritos.jpg 'California Burritos')
 
-I started by quick pickling some red onion and throwing steak on a pan. When that and fries were out of the onion, I put red onions, steak, fresh cilantro, fries, and shredded cheese on a flour tortilla. After wrapping that up and putting it on the pan until the outside was a little crispy, I put it in the microwave for about 20 seconds or so to melt the cheese.
+I started by quick pickling some red onion and throwing steak on a pan. When that and fries were out of the oven, I put red onions, steak, fresh cilantro, fries, and shredded cheese on a flour tortilla. After wrapping that up and putting it on the pan until the outside was a little crispy, I put it in the microwave for about 20 seconds or so to melt the cheese.
 
 This was good! The fries were actually great in a California style burrito. I think I'd like to get a more authentic burrito tortilla in the future so I can get more chewiness out of it, and I'll remember to get avocado next time as well, but this was still really good.
+
+### Colorado
+
+**Pueblo Slopper Burgers**
+
+![Pueblo Burger](/images/pueblo_burger.jpg 'Pueblo Burger')
+
+This sounded really strange to me, but I kept seeing these "Slopper Burgers" show up when I was looking up characteristically Colorado foods. Apparently in Pueblo Colorado, due to their state wide love of green chili sauce, they decided at some bar to pour it over a burger and eat it with a fork and knife.
+
+![Pueblo Burger Prep](/images/pueblo_burger_prep.jpg 'Pueblo Burger Prep')
+
+I decided to buy premade green chili sauce and heat it up in a sauce pan. It sounds like the other required portion is just a well made burger, so garlic paste, salt, pepper, and smoked paprika went into the ground beef and I put that on a fry pan with olive oil. Tex mex style shredded cheese went on the burger and thinly sliced tomatoes. After toasting the buns and assembling, I just poured the hot green chili sauce over the top and I was worried the texture would be really off putting, but I actually liked it. I'll probably make this odd dish again some day.
