@@ -60,3 +60,33 @@ This sounded really strange to me, but I kept seeing these "Slopper Burgers" sho
 ![Pueblo Burger Prep](/images/pueblo_burger_prep.jpg 'Pueblo Burger Prep')
 
 I decided to buy premade green chili sauce and heat it up in a sauce pan. It sounds like the other required portion is just a well made burger, so garlic paste, salt, pepper, and smoked paprika went into the ground beef and I put that on a fry pan with olive oil. Tex mex style shredded cheese went on the burger and thinly sliced tomatoes. After toasting the buns and assembling, I just poured the hot green chili sauce over the top and I was worried the texture would be really off putting, but I actually liked it. I'll probably make this odd dish again some day.
+
+### Connecticut
+
+**Steamed Cheeseburgers**
+
+![Steamed Cheeseburger](/images/steamed_cheeseburger.jpg 'Steamed Cheeseburger')
+
+According to [America's Library](https://www.americaslibrary.gov/es/ct/es_ct_burger_1.html#:~:text=Do%20you%20know%20how%20they,sandwiches%20to%20local%20factory%20workers.), the first hamburgers were invented in a shop in 1895 in Connecticut. I decided to go with an older style of making burgers to celebrate this, so I tried steaming some cheeseburgers.
+
+![Cheeseburger Setup](/images/cheeseburger_setup_no_top.jpg 'Cheeseburger Setup')
+
+I don't own a steamer so I had to make up my own setup, but it was really easy. After forming the patties with some salt, pepper, and garlic paste, I put them in a colander on top of a pot with boiling water in it.
+
+![Cheeseburger Setup With Lid](/images/cheeseburger_setup.jpg 'Cheeseburger Setup With Lid')
+
+I just put the lid on that and steamed them for about 7 minutes and they came out great. Steamed burgers are really easy and you avoid a lot of the grease this way. They're not quite as tasty as a smash burger, but they're very little cleanup, still tasty, and I feel like they were probably lower in the fat content as well.
+
+### Delaware
+
+**Slippery Dumplings**
+
+![Slippery Dumplings](/images/slippery_dumplings.jpg 'Slippery Dumplings')
+
+I don't know why so many iconic American dishes have to have names that sound so unappealing. Slippery dumplings originated from Delaware and consist of your typical chicken soup ingredients but with a thin dumpling as the carb.
+
+![Slippery Dumplings Prep](/images/slippery_dumplings_prep.jpg 'Slippery Dumplings Prep')
+
+I buttered the pan and started by cooking the veggies until they were ready, and put the chicken breast in with the chicken stock. I just use Better than Bouillon for this because it's easy and it tastes great.
+
+While that cooked I used flour, baking powder, salt, and vegetable oil to make a dough along with a cup and a half of the stock. After 30 minutes I took the chicken out and put the dough in after flattening it out and cutting it into slivers. After cooking that for 10 minutes, you get a thick consinstency with the stock and as the name would imply, some slippery dumplings to pour over the chicken. This was good, but I do think I just prefer a nice bowl of chicken soup.
