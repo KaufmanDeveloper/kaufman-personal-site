@@ -1,6 +1,6 @@
 ---
 title: 'Recipes Across the US'
-date: '2023-01-12'
+date: '2023-02-02'
 ---
 
 Before I started documenting my cooking adventures, I did a challenge where every week I made a different Disney recipe that was based on a Disney movie we were watching in alphabetical order. It was really fun and I learned a lot about cooking along the way. I also discovered some awesome new foods with it, including [Jollof Rice](https://en.wikipedia.org/wiki/Jollof_rice).
@@ -90,3 +90,15 @@ I don't know why so many iconic American dishes have to have names that sound so
 I buttered the pan and started by cooking the veggies until they were ready, and put the chicken breast in with the chicken stock. I just use Better than Bouillon for this because it's easy and it tastes great.
 
 While that cooked I used flour, baking powder, salt, and vegetable oil to make a dough along with a cup and a half of the stock. After 30 minutes I took the chicken out and put the dough in after flattening it out and cutting it into slivers. After cooking that for 10 minutes, you get a thick consinstency with the stock and as the name would imply, some slippery dumplings to pour over the chicken. This was good, but I do think I just prefer a nice bowl of chicken soup.
+
+### Florida
+
+**Key Lime Pie**
+
+![Key Lime Pie](/images/key_lime_pie.jpg 'Key Lime Pie')
+
+Ok, I didn't technically use key limes for this, but I can't imagine it really matters. Zest of limes, about 3/4 a cup of lime juice, greek yogurt (I went full fat for the creaminess), and sweetened condensed milk make up the filling and I just put that into a Kroger graham cracker crust.
+
+After that's in the oven at 350 degrees for 15 minutes, you just let that sit for 30 minutes and then it goes in the fridge for at least 3 hours. I made homemade whipped topping for this by just taking some heavy whipping cream and using a hand mixer with that for a while until it was fluffy. I'd actually never done this so it was cool to see how easy it is to make whipped topping with just heavy whipping cream and then some confectioner's sugar mixed in afterwards.
+
+![Whipped Cream](/images/whipped_cream.jpg 'Whipped Cream')
