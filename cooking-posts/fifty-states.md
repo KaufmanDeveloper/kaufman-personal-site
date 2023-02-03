@@ -102,3 +102,5 @@ Ok, I didn't technically use key limes for this, but I can't imagine it really m
 After that's in the oven at 350 degrees for 15 minutes, you just let that sit for 30 minutes and then it goes in the fridge for at least 3 hours. I made homemade whipped topping for this by just taking some heavy whipping cream and using a hand mixer with that for a while until it was fluffy. I'd actually never done this so it was cool to see how easy it is to make whipped topping with just heavy whipping cream and then some confectioner's sugar mixed in afterwards.
 
 ![Whipped Cream](/images/whipped_cream.jpg 'Whipped Cream')
+
+This took surprisingly little effort, tasted awesome, and is kinda fancy shmancy looking. I'd love to make this when hosting guests as a way to flex some dessert making skills.
