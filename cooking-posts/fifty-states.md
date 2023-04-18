@@ -131,7 +131,7 @@ I just used liquid smoke and cooked the pork in the crock pot to emulate a smoky
 
 **Chicago Style Hot Dogs**
 
-I wanted to make my own half sour pickles for this referencing [this video](https://youtu.be/vD6XWXj9l8Q), again getting some inspo from Bon Appetit. Unfortunately I did something wrong, maybe because I didn't include garlic with the brine or I got the salinity wrong, but the pickles came out super gross, and I don't think it's worth trying again.
+I wanted to make my own half sour pickles for this referencing [this video](https://youtu.be/vD6XWXj9l8Q), again getting some inspo from Bon Appetit. Unfortunately I did something wrong, maybe because I didn't include garlic with the brine or I got the salinity wrong, but the pickles came out super gross, and I don't think I care to try it again.
 
 But regardless the chicago style hot dogs were really good that I made, failed pickles aside! Probably my favorite learning here was that steaming hot dog buns is worth the effort.
 
