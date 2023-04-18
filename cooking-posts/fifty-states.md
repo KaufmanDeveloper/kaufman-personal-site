@@ -121,7 +121,7 @@ Pretty simple flour, egg, and then cornmeal and bread crumb mixture stations to 
 
 **Kalua Pork**
 
-This probably isn't accurate to the true way this is made at all, since it seems to involve burying the meat and barbequing it that way, or at least that's how they do it on Bon Appetit in [this video](https://youtu.be/2XhBMaPJjl0?t=313) that I love.
+This probably isn't accurate to the true way this is made at all, since the true method for making this seems to involve burying the meat and barbequing it that way, or at least that's how they do it on Bon Appetit in [this video](https://youtu.be/2XhBMaPJjl0?t=313) that I love.
 
 I just used liquid smoke and cooked the pork in the crock pot to emulate a smoky flavor and to get some decent tenderness from the pork. White rice and grilled pineapple on the side made this a really tasty meal.
 
