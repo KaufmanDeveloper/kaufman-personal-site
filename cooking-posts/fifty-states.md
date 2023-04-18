@@ -104,3 +104,53 @@ After that's in the oven at 350 degrees for 15 minutes, you just let that sit fo
 ![Whipped Cream](/images/whipped_cream.jpg 'Whipped Cream')
 
 This took surprisingly little effort, tasted awesome, and is kinda fancy shmancy looking. I'd love to make this when hosting guests as a way to flex some dessert making skills.
+
+### Georgia
+
+**Fried Green Tomatoes**
+
+Fried Green Tomatoes are awesome. I kind of cheated with this one because I don't think they technically originate from Georgia, but I love the movie [Fried Green Tomatoes](https://www.imdb.com/title/tt0101921/) and that movie took place in Georgia, so I couldn't resist.
+
+![Green Tomato Prep](/images/green_tomato_prep.jpg 'Green Tomato Prep')
+
+Pretty simple flour, egg, and then cornmeal and bread crumb mixture stations to dredge the green tomato slices in, and then afterwards they just go into a frying pan with some vegetable oil. I made a remoulade on the side which is just a cold mayonnaisey pickley sauce to dip the fried green tomatoes in and it was so good.
+
+![Green Tomatoes](/images/green_tomatoes.jpg 'Green Tomatoes')
+
+### Hawaii
+
+**Kalua Pork**
+
+This probably isn't accurate to the true way this is made at all, since it seems to involve burying the meat and barbequing it that way, or at least that's how they do it on Bon Appetit in [this video](https://youtu.be/2XhBMaPJjl0?t=313) that I love.
+
+I just used liquid smoke and cooked the pork in the crock pot to emulate a smoky flavor and to get some decent tenderness from the pork. White rice and grilled pineapple on the side made this a really tasty meal.
+
+![Kalua Pork](/images/kalua_pork.jpg 'Kalua Pork')
+
+### Illinois
+
+**Chicago Style Hot Dogs**
+
+I wanted to make my own half sour pickles for this referencing [this video](https://youtu.be/vD6XWXj9l8Q), again getting some inspo from Bon Appetit. Unfortunately I did something wrong, maybe because I didn't include garlic with the brine or I got the salinity wrong, but the pickles came out super gross, and I don't think it's worth trying again.
+
+But regardless the chicago style hot dogs were really good that I made, failed pickles aside!
+
+![Chicago Dog](/images/chicago_dog.jpg 'Chicago Dog')
+
+### Indiana
+
+**Breaded Tenderloin Sandwich**
+
+This was a surprise hit. I was interested in these when I was looking up Indiana recipes because I'd never had a fried pork sandwich. All you need to do is cut up some pork tenderloin and fry it up after tenderizing and flattening out the meat.
+
+I made these into sliders by cutting the meat small and putting them on small buns with just some pickle and ketchup. They were really good and I'll probably make them again.
+
+![Breaded Tenderloin](/images/breaded_tenderloin.jpg 'Breaded Tenderloin')
+
+### Iowa
+
+**Maid Rite Sandwiches**
+
+I don't know if I made these correctly. They're loose ground beef sandwiches that are simple and supposed to be really good. I avoided recipes with onion because my stomach isn't particularly fond of onions, but I think they're required to have this taste right. I also used chicken stock with it and avoided using butter for the same reason as the onions, and it ended up tasting pretty bland.
+
+![Maid Rite](/images/maid_right.jpg 'Maid Rite')
