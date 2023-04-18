@@ -115,7 +115,7 @@ Fried Green Tomatoes are awesome. I kind of cheated with this one because I don'
 
 Pretty simple flour, egg, and then cornmeal and bread crumb mixture stations to dredge the green tomato slices in, and then afterwards they just go into a frying pan with some vegetable oil. I made a remoulade on the side which is just a cold mayonnaisey pickley sauce to dip the fried green tomatoes in and it was so good.
 
-![Green Tomatoes](/images/green_tomatoes.jpg 'Green Tomatoes')
+![Green Tomatoes](/images/green_tomatos.jpg 'Green Tomatoes')
 
 ### Hawaii
 
@@ -133,7 +133,7 @@ I just used liquid smoke and cooked the pork in the crock pot to emulate a smoky
 
 I wanted to make my own half sour pickles for this referencing [this video](https://youtu.be/vD6XWXj9l8Q), again getting some inspo from Bon Appetit. Unfortunately I did something wrong, maybe because I didn't include garlic with the brine or I got the salinity wrong, but the pickles came out super gross, and I don't think it's worth trying again.
 
-But regardless the chicago style hot dogs were really good that I made, failed pickles aside!
+But regardless the chicago style hot dogs were really good that I made, failed pickles aside! Probably my favorite learning here was that steaming hot dog buns is worth the effort.
 
 ![Chicago Dog](/images/chicago_dog.jpg 'Chicago Dog')
 
