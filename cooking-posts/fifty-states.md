@@ -154,3 +154,21 @@ I made these into sliders by cutting the meat small and putting them on small bu
 I don't know if I made these correctly. They're loose ground beef sandwiches that are simple and supposed to be really good. I avoided recipes with onion because my stomach isn't particularly fond of onions, but I think they're required to have this taste right. I also used chicken stock with it and avoided using butter for the same reason as the onions, and it ended up tasting pretty bland.
 
 ![Maid Rite](/images/maid_right.jpg 'Maid Rite')
+
+### Kansas
+
+**Open Face Roast Beef Sandwiches**
+
+I asked my boss who's from Kansas what kind of meals he grew up with in Kansas. One of the ones that caught my eye were these open face roast beef sandwiches with gravy. I just used roast beef deli meat, McCormick gravy, and some toasted italian bread slices with some provologne melted on top.
+
+It was good, but I want to make it even better next time with some real roast beef that has come out of a crock pot or instant pot.
+
+![Roast Beef Sandwich](/images/roast_beef_sandwich.jpg 'Roast Beef Sandwich')
+
+### Kentucky
+
+**Hashbrown Casserole**
+
+Some thawed frozen hashbrowns, shredded cheddar cheese, cream of chicken, sour cream, and corn flakes make up a dish that I found described on Allrecipes as something a Kentucky grandma would make. It was decent but probably not something I'll bother with again, casserole's not really my thing.
+
+![Hashbrown Casserole](/images/hashbrown_casserole.jpg 'Hashbrown Casserole')
