@@ -1,14 +1,14 @@
-import Layout from "../../components/layout";
+import Layout from '../../components/layout'
 import {
   Section,
   SectionHeader,
   SectionSubHeader,
   SectionContent,
-} from "../../components/Content";
-import List from "../../components/List";
+} from '../../components/Content'
+import List from '../../components/List'
 
 export default function AboutMe() {
-  const sectionalMarginBottom = "mb-6 lg:mb-10";
+  const sectionalMarginBottom = 'mb-6 lg:mb-10'
 
   return (
     <Layout>
@@ -26,14 +26,41 @@ export default function AboutMe() {
           <SectionSubHeader>Experience</SectionSubHeader>
 
           <SectionContent className="mt-6">
-            <h3 className="text-lg text-primary">Senior Software Engineer</h3>
+            <h3 className="text-lg text-primary">
+              Web Developer / Programmer II
+            </h3>
 
             <div className="mt-3 italic text-secondary text-sm">
-              Xpresspark, Charleston, SC - Remote / June 2021 - Present
+              Knoxville Utilities Board, Knoxville, TN - Remote / October 2021 -
+              Present
             </div>
 
             <List className="mt-3">
-              <List.Item>Used Nest to implement backend services</List.Item>
+              <List.Item>
+                Used EmberJS to implement features for internal Fieldwork
+                application
+              </List.Item>
+              <List.Item>
+                Configured an Electron build and deploy process for Fieldwork
+                application
+              </List.Item>
+              <List.Item>
+                Implemented full stack logic for recording voice messages using
+                EmberJS and RecorderJS in the front-end and Java with Azure blob
+                storage in the back-end
+              </List.Item>
+            </List>
+          </SectionContent>
+
+          <SectionContent className="mt-6">
+            <h3 className="text-lg text-primary">Senior Software Engineer</h3>
+
+            <div className="mt-3 italic text-secondary text-sm">
+              Xpresspark, Charleston, SC - Remote / June 2021 - October 2021
+            </div>
+
+            <List className="mt-3">
+              <List.Item>Used NestJS to implement back-end services</List.Item>
               <List.Item>Implemented Slack integrated service</List.Item>
               <List.Item>
                 Used CQRS practices for Domain Driven Development
@@ -53,7 +80,9 @@ export default function AboutMe() {
               <List.Item>
                 Implemented responsive design using mobile first breakpoints
               </List.Item>
-              <List.Item>Learned containerization and Express</List.Item>
+              <List.Item>
+                Learned containerization and Express for back-end development
+              </List.Item>
             </List>
           </SectionContent>
 
@@ -85,13 +114,14 @@ export default function AboutMe() {
 
         <List className="mt-3">
           <List.Item>React</List.Item>
-          <List.Item>Tailwind CSS</List.Item>
+          <List.Item>Electron</List.Item>
           <List.Item>Nest</List.Item>
           <List.Item>Ember</List.Item>
+          <List.Item>Java</List.Item>
           <List.Item>Figma</List.Item>
           <List.Item>Express</List.Item>
           <List.Item>Docker</List.Item>
-          <List.Item>Java</List.Item>
+          <List.Item>Tailwind CSS</List.Item>
         </List>
 
         <SectionSubHeader>Education</SectionSubHeader>
@@ -102,5 +132,5 @@ export default function AboutMe() {
         </SectionContent>
       </div>
     </Layout>
-  );
+  )
 }
