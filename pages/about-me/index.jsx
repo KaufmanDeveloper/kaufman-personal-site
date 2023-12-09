@@ -46,7 +46,7 @@ export default function AboutMe() {
               </List.Item>
               <List.Item>
                 Implemented full stack logic for recording voice messages using
-                Emberjs and RecorderJS in the front-end and Java with Azure blob
+                EmberJS and RecorderJS in the front-end and Java with Azure blob
                 storage in the back-end
               </List.Item>
             </List>
