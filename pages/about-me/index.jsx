@@ -114,13 +114,14 @@ export default function AboutMe() {
 
         <List className="mt-3">
           <List.Item>React</List.Item>
-          <List.Item>Tailwind CSS</List.Item>
+          <List.Item>Electron</List.Item>
           <List.Item>Nest</List.Item>
           <List.Item>Ember</List.Item>
+          <List.Item>Java</List.Item>
           <List.Item>Figma</List.Item>
           <List.Item>Express</List.Item>
           <List.Item>Docker</List.Item>
-          <List.Item>Java</List.Item>
+          <List.Item>Tailwind CSS</List.Item>
         </List>
 
         <SectionSubHeader>Education</SectionSubHeader>
