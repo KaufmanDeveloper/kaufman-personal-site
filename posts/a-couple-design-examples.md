@@ -23,4 +23,4 @@ I developed an application for recording voice memos to employees that would aut
 
 For the above local development image I'm using Mirage data with Faker and default images in the list view, so actual photos are not used.
 
-I tried to use a simple interface that would give priority to the actions of recording and stopping a recording, and having the appropriate buttons be disabled when they're not functional in a given state. It's a simple but effective bit of UI that I think allows users to use recording functionality intuitively.
+I tried to use a simple interface that would give priority to the actions of recording and stopping a recording. Having the appropriate buttons be disabled when they're not functional in a given state also helps communicate proper usage to the user. It's a simple but effective bit of UI that I think allows users to use recording functionality intuitively.
