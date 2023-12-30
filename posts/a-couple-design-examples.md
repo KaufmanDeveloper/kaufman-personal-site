@@ -15,7 +15,7 @@ As the majority of our users are moving to mobile devices, interacting with the 
 
 On a save action, those settings persist to the local settings database and they're taken back to the job table view. They can reset to a smart default for each table as well.
 
-### Birthday Greetings Record
+### Birthday Greetings
 
 ![Column Settings](/images/birthday_greetings_record.png 'Birthday Greetings Record')
 
