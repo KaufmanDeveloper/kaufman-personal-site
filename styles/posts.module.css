@@ -32,5 +32,6 @@
 }
 
 .posts img {
-  height: 13rem;
+  max-width: 29rem;
+  width: 100%;
 }
