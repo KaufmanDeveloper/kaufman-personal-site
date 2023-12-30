@@ -1,5 +1,5 @@
 ---
-title: 'A Couple Front End Design Examples'
+title: 'A Couple of Front End Design Examples'
 date: '2023-12-29'
 ---
 
