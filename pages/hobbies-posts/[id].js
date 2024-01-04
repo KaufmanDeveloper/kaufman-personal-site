@@ -8,7 +8,7 @@ import {
 import Layout from '../../components/layout'
 import Date from '../../components/date'
 
-import { getAllPostIds, getPostData } from '../../lib/cooking-posts'
+import { getAllPostIds, getPostData } from '../../lib/hobbies-posts'
 
 import postStyles from '../../styles/posts.module.css'
 

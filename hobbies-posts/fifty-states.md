@@ -1,5 +1,5 @@
 ---
-title: 'Recipes Across the US'
+title: 'Cooking Recipes Across the US'
 date: '2023-02-02'
 ---
 
