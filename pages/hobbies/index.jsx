@@ -1,8 +1,8 @@
 import Layout from '../../components/layout'
 
-import CookingComponent from '../../components/Cooking'
+import HobbiesComponent from '../../components/Hobbies'
 
-import { getSortedPostsData } from '../../lib/cooking-posts'
+import { getSortedPostsData } from '../../lib/hobbies-posts'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -13,10 +13,10 @@ export async function getStaticProps() {
   }
 }
 
-export default function Cooking({ allPostsData }) {
+export default function Hobbies({ allPostsData }) {
   return (
     <Layout>
-      <CookingComponent allPostsData={allPostsData} />
+      <HobbiesComponent allPostsData={allPostsData} />
     </Layout>
   )
 }

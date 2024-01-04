@@ -8,7 +8,7 @@ function HeaderModal({ router, modalIsOpen, toggleModal }) {
     router.pathname !== '/' &&
     router.pathname !== '/about-me' &&
     router.pathname !== '/journal' &&
-    router.pathname !== '/cooking'
+    router.pathname !== '/hobbies'
 
   const heightClass = isNotMainRoute ? 'h-1/4' : 'h-1/3'
 
@@ -50,12 +50,12 @@ function HeaderModal({ router, modalIsOpen, toggleModal }) {
         </Link>
       )}
 
-      {router.pathname !== '/cooking' && (
-        <Link href="/cooking">
+      {router.pathname !== '/hobbies' && (
+        <Link href="/hobbies">
           <a
             className={`${heightClass} flex items-center justify-center text-primary text-3xl`}
           >
-            Cooking
+            Hobbies
           </a>
         </Link>
       )}
