@@ -74,8 +74,8 @@ function Layout({ router, children }) {
               className="filter brightness-50"
               src={
                 isMobileView
-                  ? '/images/cover_photo_red_bicycle_smaller.jpeg'
-                  : '/images/cover_photo_red_bicycle.jpeg'
+                  ? '/images/profile_picture_smaller_screen.jpeg'
+                  : '/images/profile_picture_fullscreen.jpg'
               }
               alt="Michael Kaufman"
               layout="fill"
