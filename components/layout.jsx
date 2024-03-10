@@ -75,7 +75,7 @@ function Layout({ router, children }) {
               src={
                 isMobileView
                   ? '/images/landscape_sitting.jpg'
-                  : '/images/landscape_sitting.jpg'
+                  : '/images/landscape_sitting_desktop.jpg'
               }
               alt="Michael Kaufman"
               layout="fill"
