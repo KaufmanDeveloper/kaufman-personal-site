@@ -17,8 +17,8 @@ export default function AboutMe() {
           <SectionHeader>About Me</SectionHeader>
 
           <SectionContent>
-            I'm a full stack web developer that loves learning and working with
-            teams that have a passion for building long lasting solutions.
+            I'm a full stack software engineer that loves learning and working
+            with teams that have a passion for building long lasting solutions.
           </SectionContent>
         </Section>
 
@@ -26,9 +26,7 @@ export default function AboutMe() {
           <SectionSubHeader>Experience</SectionSubHeader>
 
           <SectionContent className="mt-6">
-            <h3 className="text-lg text-primary">
-              Web Developer / Programmer II
-            </h3>
+            <h3 className="text-lg text-primary">Software Developer II</h3>
 
             <div className="mt-3 italic text-secondary text-sm">
               Knoxville Utilities Board, Knoxville, TN - Remote / October 2021 -

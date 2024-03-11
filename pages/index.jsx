@@ -44,7 +44,7 @@ export default function Home({ allPostsData }) {
         <SectionHeader>Nice to meet you!</SectionHeader>
 
         <SectionContent className="w-11/12 md:w-1/2 text-center text-secondary mt-10">
-          My name is Michael Kaufman. I’m a web developer based out of
+          My name is Michael Kaufman. I’m a software engineer based out of
           Nashville, TN and I have a passion for making awesome things!
         </SectionContent>
       </Section>
