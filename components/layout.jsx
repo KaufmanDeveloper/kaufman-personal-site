@@ -66,7 +66,7 @@ function Layout({ router, children }) {
                 className={`text-xl md:text-4xl leading-8 md:leading-12 text-white mx-10 w-10/12 md:w-8/12 text-center`}
                 aria-multiline="true"
               >
-                Michael Kaufman is a Web Developer based in Nashville, TN
+                Michael Kaufman is a Web Developer moving to Knoxville, TN
               </div>
             </div>
 
