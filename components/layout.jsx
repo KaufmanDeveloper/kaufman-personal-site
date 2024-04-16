@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
 import { withRouter } from 'next/router'
 
@@ -8,25 +7,12 @@ import useMediaQuery from '../helpers/useMediaQuery'
 
 import Header from './Header'
 import Footer from './footer'
+import HeaderImage from './HeaderImage'
 
 export const siteTitle = "Michael Kaufman's Blog"
 
 function Layout({ router, children }) {
   const isMobileView = useMediaQuery(screenSizes.sm)
-
-  const keyStr =
-    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='
-
-  const triplet = (e1, e2, e3) =>
-    keyStr.charAt(e1 >> 2) +
-    keyStr.charAt(((e1 & 3) << 4) | (e2 >> 4)) +
-    keyStr.charAt(((e2 & 15) << 2) | (e3 >> 6)) +
-    keyStr.charAt(e3 & 63)
-
-  const rgbDataURL = (r, g, b) =>
-    `data:image/gif;base64,R0lGODlhAQABAPAA${
-      triplet(0, r, g) + triplet(b, 255, 255)
-    }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`
 
   return (
     <div>
@@ -66,25 +52,16 @@ function Layout({ router, children }) {
                 className={`text-xl md:text-4xl leading-8 md:leading-12 text-white mx-10 w-10/12 md:w-8/12 text-center`}
                 aria-multiline="true"
               >
-                Michael Kaufman is a Software Engineer II based out of
+                Michael Kaufman is a Software Developer II based out of
                 Nashville, TN
               </div>
             </div>
 
-            <Image
-              className="filter brightness-50"
-              src={
-                isMobileView
-                  ? '/images/landscape_sitting.jpg'
-                  : '/images/landscape_sitting_desktop.jpg'
-              }
-              alt="Michael Kaufman"
-              layout="fill"
-              objectFit="cover"
-              priority={true}
-              placeholder="blur"
-              blurDataURL={rgbDataURL(183, 183, 183)}
-            />
+            {isMobileView ? (
+              <HeaderImage imageLink="/images/landscape_sitting.jpg" />
+            ) : (
+              <HeaderImage imageLink="/images/landscape_sitting_desktop.jpg" />
+            )}
           </div>
         ) : (
           <div className="m-2">
