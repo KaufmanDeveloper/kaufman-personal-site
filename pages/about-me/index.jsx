@@ -51,7 +51,7 @@ export default function AboutMe() {
           </SectionContent>
 
           <SectionContent className="mt-6">
-            <h3 className="text-lg text-primary">Senior Software Engineer</h3>
+            <h3 className="text-lg text-primary">Software Engineer</h3>
 
             <div className="mt-3 italic text-secondary text-sm">
               Xpresspark, Charleston, SC - Remote / June 2021 - October 2021
