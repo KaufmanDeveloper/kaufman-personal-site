@@ -5,6 +5,7 @@ import PortfolioElement from '../PortfolioElement'
 
 import { screenSizes } from '../../helpers/constants'
 import useMediaQuery from '../../helpers/useMediaQuery'
+import sideProjectDescriptions from '../../helpers/sideProjectDescriptions'
 
 export default function Portfolio() {
   const isMobileView = useMediaQuery(screenSizes.md)
@@ -15,7 +16,12 @@ export default function Portfolio() {
         <div className={`${!isMobileView ? 'w-1/3' : ''}`}>
           <Section className={`${isMobileView ? 'mb-3' : ''}`}>
             <SectionContent>
-              Some text describing my portfolio projects
+              <p>
+                While most of my work professionally is in private repositories,
+                I do enjoy working on side projects in my free time.
+              </p>
+              <br />
+              <p>Here are some of those fun projects!</p>
             </SectionContent>
           </Section>
         </div>
@@ -34,8 +40,8 @@ function PortfolioContent() {
     <div className={`${portfolioWidth} flex flex-col`}>
       <PortfolioElement
         externalLink="https://github.com/KaufmanDeveloper/labyrinth-game"
-        projectName="Sword Runner"
-        projectDescription="Example description"
+        projectName="Untitled RPG Godot Game"
+        projectDescription={sideProjectDescriptions.rpgGame}
         imageLink="/images/profile.jpg"
       ></PortfolioElement>
       <PortfolioElement

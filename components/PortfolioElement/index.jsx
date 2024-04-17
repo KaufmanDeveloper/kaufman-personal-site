@@ -18,18 +18,22 @@ export default function PortfolioElement({
         <Link href={externalLink} passHref>
           <a className="w-full h-full">
             <div className="rounded-md hover:bg-gray-100 p-2">
-              <div className="flex">
-                <Image
-                  className=""
-                  src={imageLink}
-                  height={88}
-                  width={88}
-                  alt="Michael Kaufman"
-                />
+              <div className="grid grid-cols-8">
+                <div className="col-span-2">
+                  <Image
+                    className=""
+                    src={imageLink}
+                    height={88}
+                    width={88}
+                    alt="Michael Kaufman"
+                  />
+                </div>
 
-                <div>
-                  <div className="text-primary ml-2">{projectName}</div>
-                  <div className="text-primary ml-2">{projectDescription}</div>
+                <div className="ml-4 col-span-6">
+                  <div className="font-semibold text-primary mb-4">
+                    {projectName}
+                  </div>
+                  <div className="text-primary">{projectDescription}</div>
                 </div>
               </div>
             </div>
