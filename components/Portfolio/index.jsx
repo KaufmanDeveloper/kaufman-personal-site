@@ -21,7 +21,7 @@ export default function Portfolio() {
                 I do enjoy working on side projects in my free time.
               </p>
               <br />
-              <p>Here are some of those fun projects!</p>
+              <p>Here are links to some of those fun projects!</p>
             </SectionContent>
           </Section>
         </div>

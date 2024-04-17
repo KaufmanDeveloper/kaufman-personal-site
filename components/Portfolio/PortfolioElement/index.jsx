@@ -13,7 +13,7 @@ export default function PortfolioElement({
   const isMobileView = useMediaQuery(screenSizes.md)
 
   return (
-    <div className={isMobileView ? 'w-full' : 'w-1/2'}>
+    <div>
       <div className={`${!isMobileView ? 'mx-2' : ''} my-2`}>
         <Link href={externalLink} passHref>
           <a className="w-full h-full">
