@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { screenSizes } from '../../helpers/constants'
-import useMediaQuery from '../../helpers/useMediaQuery'
+import { screenSizes } from '../../../helpers/constants'
+import useMediaQuery from '../../../helpers/useMediaQuery'
 
 export default function PortfolioElement({
   externalLink,

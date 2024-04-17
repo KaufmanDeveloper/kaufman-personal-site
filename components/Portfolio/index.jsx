@@ -1,7 +1,7 @@
 import { Section, SectionContent } from '../Content'
 
 import Layout from '../../components/layout'
-import PortfolioElement from '../PortfolioElement'
+import PortfolioElement from './PortfolioElement'
 
 import { screenSizes } from '../../helpers/constants'
 import useMediaQuery from '../../helpers/useMediaQuery'
