@@ -21,14 +21,12 @@ export default function Portfolio() {
 
 function PortfolioContent() {
   return (
-    <div>
-      <div className="w-full flex flex-wrap">
-        <PortfolioElement
-          externalLink="https://github.com/KaufmanDeveloper/labyrinth-game"
-          projectName="Sword Runner"
-          imageLink="/images/profile.jpg"
-        ></PortfolioElement>
-      </div>
+    <div className="w-full flex flex-wrap">
+      <PortfolioElement
+        externalLink="https://github.com/KaufmanDeveloper/labyrinth-game"
+        projectName="Sword Runner"
+        imageLink="/images/profile.jpg"
+      ></PortfolioElement>
       <PortfolioElement
         externalLink="https://github.com/KaufmanDeveloper/labyrinth-game"
         projectName="Sword Runner"
