@@ -22,7 +22,7 @@ export default function Portfolio() {
 function PortfolioContent() {
   return (
     <div>
-      <div className="mb-2">
+      <div className="w-full flex flex-wrap">
         <PortfolioElement
           externalLink="https://github.com/KaufmanDeveloper/labyrinth-game"
           projectName="Sword Runner"
