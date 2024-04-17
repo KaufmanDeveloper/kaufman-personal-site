@@ -11,9 +11,9 @@ export default function Portfolio() {
 
   return (
     <Layout>
-      <div className={`flex ${isMobileView && 'flex-col'}`}>
-        <div>
-          <Section className={`${isMobileView && 'mb-3'}`}>
+      <div className={`flex ${isMobileView ? 'flex-col' : ''}`}>
+        <div className={`${!isMobileView ? 'w-1/3' : ''}`}>
+          <Section className={`${isMobileView ? 'mb-3' : ''}`}>
             <SectionContent>
               Some text describing my portfolio projects
             </SectionContent>
@@ -28,11 +28,10 @@ export default function Portfolio() {
 
 function PortfolioContent() {
   const isMobileView = useMediaQuery(screenSizes.md)
-
   const portfolioWidth = isMobileView ? 'w-full' : 'w-3/6'
 
   return (
-    <div className={`${portfolioWidth} flex flex-wrap`}>
+    <div className={`${portfolioWidth} flex flex-col`}>
       <PortfolioElement
         externalLink="https://github.com/KaufmanDeveloper/labyrinth-game"
         projectName="Sword Runner"

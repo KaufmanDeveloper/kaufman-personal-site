@@ -14,7 +14,7 @@ export default function PortfolioElement({
 
   return (
     <div className={isMobileView ? 'w-full' : 'w-1/2'}>
-      <div className={`${!isMobileView && 'mx-2'} my-2`}>
+      <div className={`${!isMobileView ? 'mx-2' : ''} my-2`}>
         <Link href={externalLink} passHref>
           <a className="w-full h-full">
             <div className="rounded-md hover:bg-gray-100 p-2">
