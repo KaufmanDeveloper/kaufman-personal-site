@@ -8,7 +8,7 @@ function HeaderNavigation({ router, isHomeVersion }) {
   const isCurrentRouteStyling = isHomeVersion ? 'text-gray-300' : 'text-primary'
 
   return (
-    <div className="flex mr-3 w-64 justify-between">
+    <div className="flex mr-3 w-72 justify-between">
       {router.pathname === '/' ? (
         <span className={isCurrentRouteStyling}>Home</span>
       ) : (
