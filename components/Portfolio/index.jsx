@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import { Section, SectionContent } from '../Content'
 
 import Layout from '../../components/layout'
@@ -25,11 +23,13 @@ function PortfolioContent() {
       <PortfolioElement
         externalLink="https://github.com/KaufmanDeveloper/labyrinth-game"
         projectName="Sword Runner"
+        projectDescription="Example description"
         imageLink="/images/profile.jpg"
       ></PortfolioElement>
       <PortfolioElement
         externalLink="https://github.com/KaufmanDeveloper/labyrinth-game"
         projectName="Sword Runner"
+        projectDescription="Example description"
         imageLink="/images/profile.jpg"
       ></PortfolioElement>
     </div>
