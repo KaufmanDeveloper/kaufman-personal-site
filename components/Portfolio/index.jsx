@@ -14,34 +14,40 @@ export default function Portfolio() {
         </SectionContent>
       </Section>
 
-      <div className="w-full h-full flex flex-col justify-center align-center">
-        <div className="border-b h-full">
-          <PortfolioElement externalLink="https://github.com/KaufmanDeveloper/labyrinth-game">
-            <div>
-              <Image
-                className="h-full"
-                src="/images/profile.jpg"
-                height={44}
-                width={44}
-                alt="Michael Kaufman"
-              />
-            </div>
-          </PortfolioElement>
-        </div>
-        <div className="border-b h-full">
-          <PortfolioElement externalLink="https://github.com/KaufmanDeveloper/labyrinth-game">
-            <div>
-              <Image
-                className="h-full"
-                src="/images/profile.jpg"
-                height={44}
-                width={44}
-                alt="Michael Kaufman"
-              />
-            </div>
-          </PortfolioElement>
-        </div>
-      </div>
+      <PortfolioContent />
     </Layout>
+  )
+}
+
+function PortfolioContent() {
+  return (
+    <div className="w-full h-full flex flex-col justify-center align-center">
+      <div className="border-b h-full">
+        <PortfolioElement externalLink="https://github.com/KaufmanDeveloper/labyrinth-game">
+          <div>
+            <Image
+              className="h-full"
+              src="/images/profile.jpg"
+              height={44}
+              width={44}
+              alt="Michael Kaufman"
+            />
+          </div>
+        </PortfolioElement>
+      </div>
+      <div className="border-b h-full">
+        <PortfolioElement externalLink="https://github.com/KaufmanDeveloper/labyrinth-game">
+          <div>
+            <Image
+              className="h-full"
+              src="/images/profile.jpg"
+              height={44}
+              width={44}
+              alt="Michael Kaufman"
+            />
+          </div>
+        </PortfolioElement>
+      </div>
+    </div>
   )
 }
