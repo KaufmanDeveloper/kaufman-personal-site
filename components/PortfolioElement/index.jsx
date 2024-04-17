@@ -1,15 +1,18 @@
 import Link from 'next/link'
 
 import HeaderImage from '../HeaderImage'
+import { screenSizes } from '../../helpers/constants'
+import useMediaQuery from '../../helpers/useMediaQuery'
 
 export default function PortfolioElement({
-  children,
   externalLink,
   projectName,
   imageLink,
 }) {
+  const isMobileView = useMediaQuery(screenSizes.md)
+
   return (
-    <div className="w-1/2">
+    <div className={isMobileView ? 'w-full' : 'w-1/2'}>
       <Link href={externalLink} passHref>
         <a className="hover:opacity-90">
           <div className="relative pt-half md:pt-half overflow-hidden flex justify-center">
