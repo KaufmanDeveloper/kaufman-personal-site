@@ -40,16 +40,36 @@ function PortfolioContent() {
     <div className={`${portfolioWidth} flex flex-col`}>
       <PortfolioElement
         externalLink="https://github.com/KaufmanDeveloper/labyrinth-game"
-        projectName="Untitled RPG Godot Game"
+        projectName="RPG Godot Game"
         projectDescription={sideProjectDescriptions.rpgGame}
         imageLink="/images/profile.jpg"
-      ></PortfolioElement>
+      />
       <PortfolioElement
-        externalLink="https://github.com/KaufmanDeveloper/labyrinth-game"
-        projectName="Sword Runner"
-        projectDescription="Example description"
+        externalLink="https://www.youtube.com/@kaufdropgames134"
+        projectName="Kaufdrop Games"
+        projectDescription={sideProjectDescriptions.kaufdropGames}
         imageLink="/images/profile.jpg"
-      ></PortfolioElement>
+      />
+      <PortfolioElement
+        externalLink="https://github.com/knoxville-utilities-board/ember-nrg-ui/commit/5f1888551a10e2f739eb9884356002f80bb0b79a"
+        projectName="Freestyle in ember-nrg-ui"
+        projectDescription={sideProjectDescriptions.nrgFreestyle}
+        imageLink="/images/profile.jpg"
+      />
+      <PortfolioElement
+        externalLink="https://github.com/KaufmanDeveloper/gravity-flyer"
+        projectName="Wo Dude"
+        projectDescription={sideProjectDescriptions.woDude}
+        imageLink="/images/profile.jpg"
+      />
+      <PortfolioElement
+        externalLink="https://github.com/KaufmanDeveloper/react-cross-browser-audio-recorder"
+        projectName="Cross Browser Audio Recorder"
+        projectDescription={
+          sideProjectDescriptions.reactCrossBrowserAudioRecorder
+        }
+        imageLink="/images/profile.jpg"
+      />
     </div>
   )
 }
