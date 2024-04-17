@@ -69,6 +69,7 @@ function PortfolioContent() {
           sideProjectDescriptions.reactCrossBrowserAudioRecorder
         }
         imageLink="/portfolio_images/cross-browser-audio-recorder.png"
+        isLastElement={true}
       />
     </div>
   )

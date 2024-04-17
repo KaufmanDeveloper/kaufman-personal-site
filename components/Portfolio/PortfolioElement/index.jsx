@@ -9,11 +9,12 @@ export default function PortfolioElement({
   imageLink,
   projectName,
   projectDescription,
+  isLastElement,
 }) {
   const isMobileView = useMediaQuery(screenSizes.md)
 
   return (
-    <div>
+    <div className={`${isLastElement ? '' : 'border-b border-gray-200'}`}>
       <div className={`${!isMobileView ? 'mx-2' : ''} my-2`}>
         <Link href={externalLink} passHref>
           <a className="w-full h-full">
