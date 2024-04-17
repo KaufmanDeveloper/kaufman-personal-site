@@ -33,11 +33,11 @@ function HeaderNavigation({ router, isHomeVersion }) {
         </Link>
       )}
 
-      {router.pathname === '/hobbies' ? (
-        <span className={isCurrentRouteStyling}>Hobbies</span>
+      {router.pathname === '/portfolio' ? (
+        <span className={isCurrentRouteStyling}>Portfolio</span>
       ) : (
-        <Link href="/hobbies">
-          <a className={linkStyling}>Hobbies</a>
+        <Link href="/portfolio">
+          <a className={linkStyling}>Portfolio</a>
         </Link>
       )}
     </div>
