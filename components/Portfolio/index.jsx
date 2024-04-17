@@ -3,23 +3,36 @@ import { Section, SectionContent } from '../Content'
 import Layout from '../../components/layout'
 import PortfolioElement from '../PortfolioElement'
 
+import { screenSizes } from '../../helpers/constants'
+import useMediaQuery from '../../helpers/useMediaQuery'
+
 export default function Portfolio() {
+  const isMobileView = useMediaQuery(screenSizes.md)
+
   return (
     <Layout>
-      <Section className="mb-3">
-        <SectionContent>
-          Some text describing my portfolio projects
-        </SectionContent>
-      </Section>
+      <div className={`flex ${isMobileView && 'flex-col'}`}>
+        <div>
+          <Section className={`${isMobileView && 'mb-3'}`}>
+            <SectionContent>
+              Some text describing my portfolio projects
+            </SectionContent>
+          </Section>
+        </div>
 
-      <PortfolioContent />
+        <PortfolioContent />
+      </div>
     </Layout>
   )
 }
 
 function PortfolioContent() {
+  const isMobileView = useMediaQuery(screenSizes.md)
+
+  const portfolioWidth = isMobileView ? 'w-full' : 'w-3/6'
+
   return (
-    <div className="w-full flex flex-wrap">
+    <div className={`${portfolioWidth} flex flex-wrap`}>
       <PortfolioElement
         externalLink="https://github.com/KaufmanDeveloper/labyrinth-game"
         projectName="Sword Runner"

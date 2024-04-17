@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-import HeaderImage from '../HeaderImage'
 import { screenSizes } from '../../helpers/constants'
 import useMediaQuery from '../../helpers/useMediaQuery'
 
