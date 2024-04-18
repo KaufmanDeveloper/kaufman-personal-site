@@ -39,17 +39,14 @@ function PortfolioContent() {
   return (
     <div className={`${portfolioWidth} flex flex-col`}>
       <PortfolioElement
-        externalLink="https://github.com/KaufmanDeveloper/labyrinth-game"
-        projectName="RPG Godot Game"
-        projectDescription={sideProjectDescriptions.rpgGame}
-        imageLink="/portfolio_images/rpg_game.png"
+        externalLink="https://github.com/KaufmanDeveloper/react-cross-browser-audio-recorder"
+        projectName="Cross Browser Audio Recorder"
+        projectDescription={
+          sideProjectDescriptions.reactCrossBrowserAudioRecorder
+        }
+        imageLink="/portfolio_images/cross-browser-audio-recorder.png"
       />
-      <PortfolioElement
-        externalLink="https://www.youtube.com/@kaufdropgames134"
-        projectName="Kaufdrop Games"
-        projectDescription={sideProjectDescriptions.kaufdropGames}
-        imageLink="/portfolio_images/kaufdrop_games.png"
-      />
+
       <PortfolioElement
         externalLink="https://github.com/knoxville-utilities-board/ember-nrg-ui/commit/5f1888551a10e2f739eb9884356002f80bb0b79a"
         projectName="Freestyle in ember-nrg-ui"
@@ -63,12 +60,16 @@ function PortfolioContent() {
         imageLink="/portfolio_images/wo-dude.png"
       />
       <PortfolioElement
-        externalLink="https://github.com/KaufmanDeveloper/react-cross-browser-audio-recorder"
-        projectName="Cross Browser Audio Recorder"
-        projectDescription={
-          sideProjectDescriptions.reactCrossBrowserAudioRecorder
-        }
-        imageLink="/portfolio_images/cross-browser-audio-recorder.png"
+        externalLink="https://github.com/KaufmanDeveloper/labyrinth-game"
+        projectName="RPG Godot Game"
+        projectDescription={sideProjectDescriptions.rpgGame}
+        imageLink="/portfolio_images/rpg_game.png"
+      />
+      <PortfolioElement
+        externalLink="https://www.youtube.com/@kaufdropgames134"
+        projectName="Kaufdrop Games"
+        projectDescription={sideProjectDescriptions.kaufdropGames}
+        imageLink="/portfolio_images/kaufdrop_games.png"
         isLastElement={true}
       />
     </div>
