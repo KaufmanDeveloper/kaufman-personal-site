@@ -39,6 +39,18 @@ function PortfolioContent() {
   return (
     <div className={`${portfolioWidth} flex flex-col`}>
       <PortfolioElement
+        externalLink="https://www.youtube.com/@KaufmanDeveloper"
+        projectName=""
+        projectDescription={sideProjectDescriptions.kaufmanDeveloper}
+        imageLink="/portfolio_images/kaufman-developer-channel.png"
+      />
+      <PortfolioElement
+        externalLink="https://github.com/KaufmanDeveloper/data-visualizations"
+        projectName="D3 Data Visualizations"
+        projectDescription={sideProjectDescriptions.dataVisualizations}
+        imageLink="/portfolio_images/data-visualizations.png"
+      />
+      <PortfolioElement
         externalLink="https://github.com/KaufmanDeveloper/react-cross-browser-audio-recorder"
         projectName="Cross Browser Audio Recorder"
         projectDescription={
