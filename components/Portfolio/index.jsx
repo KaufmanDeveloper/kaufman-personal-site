@@ -40,7 +40,7 @@ function PortfolioContent() {
     <div className={`${portfolioWidth} flex flex-col`}>
       <PortfolioElement
         externalLink="https://www.youtube.com/@KaufmanDeveloper"
-        projectName=""
+        projectName="Web Development Youtube Channel"
         projectDescription={sideProjectDescriptions.kaufmanDeveloper}
         imageLink="/portfolio_images/kaufman-developer-channel.png"
       />
