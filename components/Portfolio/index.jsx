@@ -77,13 +77,6 @@ function PortfolioContent() {
         projectDescription={sideProjectDescriptions.rpgGame}
         imageLink="/portfolio_images/rpg_game.png"
       />
-      <PortfolioElement
-        externalLink="https://www.youtube.com/@kaufdropgames134"
-        projectName="Kaufdrop Games"
-        projectDescription={sideProjectDescriptions.kaufdropGames}
-        imageLink="/portfolio_images/kaufdrop_games.png"
-        isLastElement={true}
-      />
     </div>
   )
 }
