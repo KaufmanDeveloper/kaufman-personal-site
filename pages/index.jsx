@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-import FormatQuote from '@material-ui/icons/FormatQuote'
-
 import Layout from '../components/layout'
 import Journal from '../components/Journal'
 import ContentLink from '../components/ContentLink'
@@ -88,16 +86,6 @@ export default function Home({ allPostsData }) {
           difference in your skill over time.
         </SectionContent>
       </Section>
-
-      <div className="flex justify-center my-4">
-        <FormatQuote
-          className="text-gray-500 mt-2 lg:mt-12 mx-1"
-          style={{ fontSize: 18 }}
-        />
-        <div className="text-center text-gray-500 text-xl lg:text-2xl mt-2 lg:mt-12">
-          Little by little, one travels far.
-        </div>
-      </div>
 
       <div
         className={`${
