@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-import FormatQuote from '@material-ui/icons/FormatQuote'
-
 import Layout from '../components/layout'
 import Journal from '../components/Journal'
 import ContentLink from '../components/ContentLink'
@@ -44,9 +42,9 @@ export default function Home({ allPostsData }) {
         <SectionHeader>Nice to meet you!</SectionHeader>
 
         <SectionContent className="w-11/12 md:w-1/2 text-center text-secondary mt-10">
-          My name is Michael Kaufman. I’m a software engineer based out of the
-          Nashville area in Tennessee and I have a passion for making awesome
-          things!
+          My name is Michael Kaufman. I am a software engineer with a passion
+          for making awesome things and working with teams that are excited
+          about building ambitious solutions.
         </SectionContent>
       </Section>
 
@@ -60,11 +58,9 @@ export default function Home({ allPostsData }) {
             !isMobileView ? 'w-1/2 px-12 mt-0' : 'px-6 pt-4'
           } text-center text-secondary`}
         >
-          I love to work and learn with teams that love creating shippable
-          products. I've worked with a government team maintaining legacy
-          software as well as an agricultural software development team using
-          the latest front end development practices to rapidly develop and
-          prototype.
+          I love to create shippable products. I've worked with a government
+          team maintaining legacy software as well as companies using the latest
+          front end development practices to rapidly develop and prototype.
         </SectionContent>
 
         <SectionContent
@@ -86,20 +82,10 @@ export default function Home({ allPostsData }) {
           <ContentLink href="https://en.wikipedia.org/wiki/Kaizen">
             Kaizen
           </ContentLink>
-          , or incremental development. Incremental improvement every day no
-          matter how small makes a big difference in your skill over time.
+          , or incremental development. Small improvements every day make a big
+          difference in your skill over time.
         </SectionContent>
       </Section>
-
-      <div className="flex justify-center my-4">
-        <FormatQuote
-          className="text-gray-500 mt-2 lg:mt-12 mx-1"
-          style={{ fontSize: 18 }}
-        />
-        <div className="text-center text-gray-500 text-xl lg:text-2xl mt-2 lg:mt-12">
-          Little by little, one travels far.
-        </div>
-      </div>
 
       <div
         className={`${

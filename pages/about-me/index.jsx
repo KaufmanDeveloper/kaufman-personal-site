@@ -17,8 +17,9 @@ export default function AboutMe() {
           <SectionHeader>About Me</SectionHeader>
 
           <SectionContent>
-            I'm a full stack software engineer that loves learning and working
-            with teams that have a passion for building long lasting solutions.
+            I'm a front end software engineer with full stack experience that
+            loves learning and working with teams that have a passion for
+            building long lasting solutions.
           </SectionContent>
         </Section>
 
@@ -26,11 +27,37 @@ export default function AboutMe() {
           <SectionSubHeader>Experience</SectionSubHeader>
 
           <SectionContent className="mt-6">
+            <h3 className="text-lg text-primary">Senior Software Engineer</h3>
+
+            <div className="mt-3 italic text-secondary text-sm">
+              Costar Group | STR - Nashville, TN - Hybrid / September 2024 -
+              Present
+            </div>
+
+            <List className="mt-3">
+              <List.Item>
+                Used React to implement features and bug fixes for customer
+                configuration applications
+              </List.Item>
+              <List.Item>
+                Added ability to use Mock Service Worker in our micro frontend
+                applications to make development easier as well as standardizing
+                automated test data, and will be presenting this work to front
+                end developers across the company teams
+              </List.Item>
+              <List.Item>
+                Participated in Scrum meetings as well as developer meetings
+                intended for process improvement and architectural discussions
+              </List.Item>
+            </List>
+          </SectionContent>
+
+          <SectionContent className="mt-6">
             <h3 className="text-lg text-primary">Software Developer II</h3>
 
             <div className="mt-3 italic text-secondary text-sm">
               Knoxville Utilities Board, Knoxville, TN - Remote / October 2021 -
-              Present
+              September 2024
             </div>
 
             <List className="mt-3">
