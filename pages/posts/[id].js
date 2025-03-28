@@ -44,7 +44,7 @@ export default function Post({ postData }) {
           </div>
 
           <SectionContent className="posts w-full lg:w-8/12">
-            <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            <div>{postData.contentHtml}</div>
           </SectionContent>
         </Section>
       </article>
