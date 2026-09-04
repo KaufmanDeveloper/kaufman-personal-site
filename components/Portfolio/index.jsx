@@ -58,13 +58,6 @@ function PortfolioContent() {
         }
         imageLink="/portfolio_images/cross-browser-audio-recorder.png"
       />
-
-      <PortfolioElement
-        externalLink="https://github.com/knoxville-utilities-board/ember-nrg-ui/commit/5f1888551a10e2f739eb9884356002f80bb0b79a"
-        projectName="Freestyle in ember-nrg-ui"
-        projectDescription={sideProjectDescriptions.nrgFreestyle}
-        imageLink="/portfolio_images/freestyle_ember-nrg-ui.png"
-      />
       <PortfolioElement
         externalLink="https://github.com/KaufmanDeveloper/gravity-flyer"
         projectName="Wo Dude"

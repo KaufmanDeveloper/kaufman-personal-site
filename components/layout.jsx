@@ -28,10 +28,6 @@ function Layout({ router, children }) {
           <meta property="fb:app_id" content="Kaufman Developer" />
           <meta property="og:title" content="Michael Kaufman's personal blog" />
           <meta
-            name="twitter:card"
-            content="Michael Kaufman's personal blog."
-          />
-          <meta
             property="og:description"
             content="Read posts and learnings by Michael Kaufman."
           />
