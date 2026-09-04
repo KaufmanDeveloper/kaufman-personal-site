@@ -1,8 +1,5 @@
-import Link from 'next/link'
-
 import GithubIcon from './GithubIcon'
 import YouTubeIcon from './YouTubeIcon'
-import TwitterIcon from './TwitterIcon'
 
 export default function Footer() {
   return (
@@ -23,14 +20,6 @@ export default function Footer() {
             rel="noreferrer"
           >
             <YouTubeIcon className="text-primary hover:text-secondary" />
-          </a>
-
-          <a
-            href="https://twitter.com/KaufmanDev"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <TwitterIcon className="text-primary hover:text-secondary" />
           </a>
         </div>
       </div>
