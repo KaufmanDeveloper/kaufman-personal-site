@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="relative pb-16">
       <div className="w-full absolute bottom-0 h-16 flex justify-center py-4 border-t">
-        <div className="w-32 flex items-center justify-between">
+        <div className="w-16 flex items-center justify-between">
           <a
             href="https://github.com/KaufmanDeveloper"
             target="_blank"
