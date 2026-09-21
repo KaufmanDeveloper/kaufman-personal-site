@@ -15,7 +15,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://www.youtube.com/@KaufmanDeveloper"
+            href="https://www.youtube.com/@KaufmanProgrammer"
             target="_blank"
             rel="noreferrer"
           >
