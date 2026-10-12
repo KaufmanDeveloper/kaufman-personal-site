@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Layout from '../components/layout'
 import Journal from '../components/Journal'
 import ContentLink from '../components/ContentLink'
+import YouTubeEmbed from '../components/YouTubeEmbed'
 
 import { screenSizes } from '../helpers/constants'
 import useMediaQuery from '../helpers/useMediaQuery'
@@ -35,6 +36,22 @@ export default function Home({ allPostsData }) {
         <title>Michael Kaufman's Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Section className={`${sectionalMargin} w-full`}>
+        <div className="flex flex-col items-center gap-8 md:flex-row">
+          <div className="w-full text-center md:w-1/2 md:text-left">
+            <h2 className="text-2xl text-primary lg:text-4xl">
+              Watch my latest video
+            </h2>
+          </div>
+          <div className="w-full md:w-1/2">
+            <YouTubeEmbed
+              videoId="-Dqc1Mo4Tuo"
+              title="Michael Kaufman's latest video"
+            />
+          </div>
+        </div>
+      </Section>
 
       <Section
         className={`flex flex-col items-center justify-center ${sectionalMargin} w-full`}
