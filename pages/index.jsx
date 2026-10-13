@@ -37,28 +37,17 @@ export default function Home({ allPostsData }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Section className={`${sectionalMargin} w-full`}>
-        <div className="flex flex-col items-center gap-8 md:flex-row">
-          <div className="w-full text-center md:w-1/2 md:text-left">
-            <h2 className="text-2xl text-primary lg:text-4xl">
-              Watch my latest video
-            </h2>
-          </div>
-          <div className="w-full md:w-1/2">
-            <YouTubeEmbed
-              videoId="-Dqc1Mo4Tuo"
-              title="Michael Kaufman's latest video"
-            />
-          </div>
-        </div>
-      </Section>
-
       <Section
-        className={`flex flex-col items-center justify-center ${sectionalMargin} w-full`}
+        className={`flex flex-col items-center justify-center gap-8 md:flex-row ${sectionalMargin}`}
       >
-        <SectionHeader>Nice to meet you!</SectionHeader>
+        <div className="w-11/12 md:w-1/2">
+          <YouTubeEmbed
+            videoId="-Dqc1Mo4Tuo"
+            title="Michael Kaufman's latest video"
+          />
+        </div>
 
-        <SectionContent className="w-11/12 md:w-1/2 text-center text-secondary mt-10">
+        <SectionContent className="mt-0 w-11/12 px-6 pb-4 text-center text-secondary md:w-1/2 md:px-10 md:pb-0">
           My name is Michael Kaufman. I am a software engineer with a passion
           for making awesome things and working with teams that are excited
           about building ambitious solutions.
